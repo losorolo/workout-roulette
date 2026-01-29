@@ -403,6 +403,15 @@ const GymRoutineApp = () => {
                                                 Veces realizadas este ejercicio: {completionStats[ex.name] || 0}
                                             </p>
 
+                                            {/* Instructions if available */}
+                                            {ex.instructions && (
+                                                <div className="mt-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800/50">
+                                                    <p className="text-xs text-slate-400 leading-relaxed text-center">
+                                                        {ex.instructions}
+                                                    </p>
+                                                </div>
+                                            )}
+
 
                                         </div>
                                     </div>
