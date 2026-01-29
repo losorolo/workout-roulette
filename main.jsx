@@ -399,14 +399,7 @@ const GymRoutineApp = () => {
                                             <div className="w-full h-48 rounded-xl bg-slate-950 overflow-hidden border border-slate-800 relative z-10 shadow-inner">
                                                 <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
                                             </div>
-                                            {/* Instructions if available */}
-                                            {ex.instructions && (
-                                                <div className="mt-3 p-3 bg-slate-950/50 rounded-lg border border-slate-800/50 mb-2">
-                                                    <p className="text-xs text-slate-400 leading-relaxed text-center">
-                                                        {ex.instructions}
-                                                    </p>
-                                                </div>
-                                            )}
+
 
                                             <p className="text-[10px] text-slate-500 text-center font-medium opacity-60">
                                                 Veces realizadas este ejercicio: {completionStats[ex.name] || 0}
