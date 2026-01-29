@@ -342,7 +342,7 @@
             "parent_cat": "Abdominales"
         },
         {
-            "name": "Codo A Rodilla",
+            "name": "Codo a Rodilla",
             "instructions": "Acuéstate en el suelo, cruzando la pierna derecha sobre la rodilla izquierda doblada. Coloca las manos detrás de la cabeza, comenzando con los omóplatos en el suelo. Esta será tu posición inicial.\nRealice el movimiento flexionando la columna vertebral y girando el torso para llevar el codo izquierdo a la rodilla derecha.\nVuelva a la posición inicial y repita el movimiento durante el número deseado de repeticiones antes de cambiar de lado.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Elbow_to_Knee/0.jpg",
             "category": "strength",
@@ -1018,6 +1018,15 @@
             "instructions_es": "Colgado from a pull-up bar using a pronated grip. Your arms and Piernas should be extended. This will be your starting position. Begin by quickly raising one knee as Alto as you can. Do not swing your body or your Piernas. 3 Immediately Inverso the motion, returning that Pierna to the starting position. Simultaneously Elevación the opposite knee as Alto as possible. Continue Alternando between Piernas until the set is complete.",
             "videoId": "mYoh_LKtrQ8",
             "parent_cat": "Abdominales"
+        },
+        {
+            "name": "Levantamiento Turco",
+            "muscle": "Abdominales",
+            "category": "strength",
+            "video": "0-0T3hK3u4k",
+            "videoId": "0-0T3hK3u4k",
+            "gif": "",
+            "instructions": "Realiza Levantamiento Turco manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Bíceps": [
@@ -1063,17 +1072,6 @@
             "instructions_en": "Lie against an incline bench, with your arms holding a barbell and hanging down in a horizontal line. This will be your starting position.\nWhile keeping the upper arms stationary, curl the weight up as high as you can while squeezing the biceps. Breathe out as you perform this portion of the movement. Tip: Only the forearms should move. Do not swing the arms.\nAfter a second contraction, slowly go back to the starting position as you inhale. Tip: Make sure that you go all of the way down.\nRepeat for the recommended amount of repetitions.",
             "instructions_es": "Lie against an Banca Inclinada, with your arms holding a Barra and Colgadoing down in a horizontal line. This will be your starting position. While keeping the upper arms stationary, Curl the weight up as Alto as you can while squeezing the Bíceps. Breathe out as you perform this portion of the movement. Tip: Only the foPosteriorms should move. Do not swing the arms. After a second contraction, sBajoly go Espalda to the starting position as you inhale. Tip: Make sure that you go all of the way down. Repeat for the recommended amount of repetitions.",
             "videoId": "kF6FOuJsFP0",
-            "parent_cat": "Bíceps"
-        },
-        {
-            "name": "Brachialis-smr",
-            "instructions": "Acuéstese de lado, con la parte superior del brazo contra el rodillo de espuma. La parte superior del brazo debe estar más o menos alineada con su cuerpo, con la parte exterior del bíceps presionada contra el rodillo de espuma.\nLevanta las caderas del suelo, apoyando el peso en el brazo y en los pies. Mantenga pulsado durante 10-30 segundos y, a continuación, cambie de lado.",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Brachialis-SMR/0.jpg",
-            "category": "stretching",
-            "name_en": "Brachialis-SMR",
-            "instructions_en": "Lie on your side, with your upper arm against the foam roller. The upper arm should be more or less aligned with your body, with the outside of the bicep pressed against the foam roller.\nRaise your hips off of the floor, supporting your weight on your arm and on your feet. Hold for 10-30 seconds, and then switch sides.",
-            "instructions_es": "Lie on your Lateral, with your upper arm against the foam roller. The upper arm should be more or less aligned with your body, with the outLateral of the bicep Pressed against the foam roller. Elevación your Caderas off of the Suelo, supporting your weight on your arm and on your feet. Hold for 10-30 seconds, and then switch Laterals.",
-            "videoId": "ohlVY9s2jUQ",
             "parent_cat": "Bíceps"
         },
         {
@@ -1272,17 +1270,6 @@
             "instructions_en": "Hold a dumbbell in each hand and lie back on an incline bench.\nThe dumbbells should be at arm's length hanging at your sides and your palms should be facing out. This will be your starting position.\nNow as you exhale curl the weight outward and up while keeping your forearms in line with your side deltoids. Continue the curl until the dumbbells are at shoulder height and to the sides of your deltoids. Tip: The end of the movement should look similar to a double biceps pose.\nAfter a second contraction at the top of the movement, start to inhale and slowly lower the weights back to the starting position using the same path used to bring them up.\nRepeat for the recommended amount of repetitions.",
             "instructions_es": "Hold a Mancuerna in each hand and lie Espalda on an Banca Inclinada. The Mancuernas should be at arm's length Colgadoing at your Laterals and your palms should be facing out. This will be your starting position. Now as you exhale Curl the weight outward and up while keeping your foPosteriorms in line with your Lateral deltoids. Continue the Curl until the Mancuernas are at Hombro height and to the Laterals of your deltoids. Tip: The end of the movement should look similar to a double Bíceps pose. After a second contraction at the top of the movement, start to inhale and sBajoly Bajoer the weights Espalda to the starting position using the same path used to bring them up. Repeat for the recommended amount of repetitions.",
             "videoId": "Zm3FJQmGiK0",
-            "parent_cat": "Bíceps"
-        },
-        {
-            "name": "Rizo de Cable Tendido",
-            "instructions": "Grab a straight bar or E-Z bar attachment that is attached to the low pulley with both hands, using an underhand (palms facing up) shoulder-width grip.\nLie flat on your back on top of an exercise mat in front of the weight stack with your feet flat against the frame of the pulley machine and your legs straight.\nWith your arms extended and your elbows close to your body slightly bend your arms. This will be your starting position.\nWhile keeping your upper arms stationary and the elbows close to your body, curl the bar up slowly toward your chest as you breathe out and you squeeze the biceps.\nAfter a second squeeze at the top of the movement, slowly return to the starting position.\nRepeat for the recommended amount of repetitions.",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Lying_Cable_Curl/0.jpg",
-            "category": "strength",
-            "name_en": "Lying Cable Curl",
-            "instructions_en": "Grab a straight bar or E-Z bar attachment that is attached to the low pulley with both hands, using an underhand (palms facing up) shoulder-width grip.\nLie flat on your back on top of an exercise mat in front of the weight stack with your feet flat against the frame of the pulley machine and your legs straight.\nWith your arms extended and your elbows close to your body slightly bend your arms. This will be your starting position.\nWhile keeping your upper arms stationary and the elbows close to your body, curl the bar up slowly toward your chest as you breathe out and you squeeze the biceps.\nAfter a second squeeze at the top of the movement, slowly return to the starting position.\nRepeat for the recommended amount of repetitions.",
-            "instructions_es": "Grab a straight bar or E-Z bar attachment that is attached to the Bajo pulley with both hands, using an underhand (palms facing up) Hombro-width grip. Lie flat on your Espalda on top of an exercise mat in Frontal of the weight stack with your feet flat against the frame of the pulley Máquina and your Piernas straight. With your arms extended and your elbows close to your body slightly bend your arms. This will be your starting position. While keeping your upper arms stationary and the elbows close to your body, Curl the bar up sBajoly toward your Pecho as you breathe out and you squeeze the Bíceps. After a second squeeze at the top of the movement, sBajoly return to the starting position. Repeat for the recommended amount of repetitions.",
-            "videoId": "0TFlh6k_lik",
             "parent_cat": "Bíceps"
         },
         {
@@ -1603,6 +1590,69 @@
             "instructions_es": "Grab a Mancuerna in each hand and place your upper arms on top of the Predicador bench or the Banca Inclinada. The Mancuernas should be held at Hombro height and the elbows should be flexed. Hold the Mancuernas with the palms of your hands facing down. This will be your starting position. As you breathe in, sBajoly Bajoer the Mancuernas keeping the palms down until your upper arm is extended and your Bíceps are fully stretched. Now rotate your Muñecas once you are at the bottom of the movement so that the palms of the hands are facing up. As you exhale, use your Bíceps to Curl the weights up until they are fully contracted and the Mancuernas are at Hombro height. Again, remember that to ensure full contraction you need to bring that small finger Altoer than the thumb. Squeeze the Bíceps hard for a second at the contracted position and rotate your Muñecas so that the palms are facing down again. Repeat for the recommended amount of repetitions.",
             "videoId": "0pAGMl0lYkY",
             "parent_cat": "Bíceps"
+        },
+        {
+            "name": "Arm Curl (Máquina)",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "",
+            "videoId": "placeholder_video_id",
+            "gif": "",
+            "instructions": "Realiza Arm Curl (Máquina) manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Curl con Mancuerna",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "sAq_ocpRh_I",
+            "videoId": "sAq_ocpRh_I",
+            "gif": "",
+            "instructions": "Realiza Curl con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Curl Alternado",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "sAq_ocpRh_I",
+            "videoId": "sAq_ocpRh_I",
+            "gif": "",
+            "instructions": "Realiza Curl Alternado manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Curl 21",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "qf6iz7sbaKs",
+            "videoId": "qf6iz7sbaKs",
+            "gif": "",
+            "instructions": "Realiza Curl 21 manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Parado con Barra",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "kwG2ipFRgfo",
+            "videoId": "kwG2ipFRgfo",
+            "gif": "",
+            "instructions": "Realiza Parado con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Banco Scott",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "oW2rLz10eQ8",
+            "videoId": "oW2rLz10eQ8",
+            "gif": "",
+            "instructions": "Realiza Banco Scott manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Curl Concentrado",
+            "muscle": "Bíceps",
+            "category": "strength",
+            "video": "0AUGkch3pzQ",
+            "videoId": "0AUGkch3pzQ",
+            "gif": "",
+            "instructions": "Realiza Curl Concentrado manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Gemelos": [
@@ -1713,7 +1763,7 @@
             "name_en": "Donkey Calf Raises",
             "instructions_en": "For this exercise you will need access to a donkey calf raise machine. Start by positioning your lower back and hips under the padded lever provided. The tailbone area should be the one making contact with the pad.\nPlace both of your arms on the side handles and place the balls of your feet on the calf block with the heels extending off. Align the toes forward, inward or outward, depending on the area you wish to target, and straighten the knees without locking them. This will be your starting position.\nRaise your heels as you breathe out by extending your ankles as high as possible and flexing your calf. Ensure that the knee is kept stationary at all times. There should be no bending at any time. Hold the contracted position by a second before you start to go back down.\nGo back slowly to the starting position as you breathe in by lowering your heels as you bend the ankles until calves are stretched.\nRepeat for the recommended amount of repetitions.",
             "instructions_es": "For this exercise you will need access to a Burro Gemelo Elevación Máquina. Start by positioning your Bajoer Espalda and Caderas under the padded lever provided. The tailbone area should be the one making contact with the pad. Place both of your arms on the Lateral handles and place the balls of your feet on the Gemelo Bloque with the heels extending off. Align the toes forward, inward or outward, depending on the area you wish to target, and straighten the knees without locking them. This will be your starting position. Elevación your heels as you breathe out by extending your ankles as Alto as possible and flexing your Gemelo. Ensure that the knee is kept stationary at all times. There should be no bending at any time. Hold the contracted position by a second before you start to go Espalda down. Go Espalda sBajoly to the starting position as you breathe in by Bajoering your heels as you bend the ankles until calves are stretched. Repeat for the recommended amount of repetitions.",
-            "videoId": "qM2y3v73m7Y",
+            "videoId": "r3hZ7D7l7fE",
             "parent_cat": "Gemelos"
         },
         {
@@ -1750,7 +1800,7 @@
             "parent_cat": "Gemelos"
         },
         {
-            "name": "Peroneals-smr",
+            "name": "Músculos Peroneos",
             "instructions": "Lay on your side, supporting your weight on your forearm and on a foam roller placed on the outside of your lower leg. Your upper leg can either be on top of your lower leg, or you can cross it in front of you. This will be your starting position.\nRaise your hips off of the ground and begin to roll from below the knee to above the ankle on the side of your leg, pausing at points of tension for 10-30 seconds. Repeat on the other leg.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Peroneals-SMR/0.jpg",
             "category": "stretching",
@@ -1891,6 +1941,15 @@
             "instructions_es": "Stand with your feet Cadera-distance apart, one foot slightly in Frontal of the other. Bend both knees, keeping your Espalda heel on the Suelo. Switch Laterals.",
             "videoId": "edEDU-Pg1uc",
             "parent_cat": "Gemelos"
+        },
+        {
+            "name": "Gemelos en Máquina",
+            "muscle": "Gemelos",
+            "category": "strength",
+            "video": "ymM9M5G2_aw",
+            "videoId": "ymM9M5G2_aw",
+            "gif": "",
+            "instructions": "Realiza Gemelos en Máquina manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Pecho": [
@@ -2005,7 +2064,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Cable Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Adjust the weight to an appropriate amount and be seated, grasping the handles. Your upper arms should be about 45 degrees to the body, with your head and chest up. The elbows should be bent to about 90 degrees. This will be your starting position.\nBegin by extending through the elbow, pressing the handles together straight in front of you. Keep your shoulder blades retracted as you execute the movement.\nAfter pausing at full extension, return to th starting position, keeping tension on the cables.\nYou can also execute this movement with your back off the pad, at an incline or decline, or alternate hands.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Cable_Chest_Press/0.jpg",
             "category": "strength",
@@ -2335,7 +2394,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Incline Cable Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Adjust the weight to an appropriate amount and be seated, grasping the handles. Your upper arms should be about 45 degrees to the body, with your head and chest up. The elbows should be bent to about 90 degrees. This will be your starting position.\nBegin by extending through the elbow, pressing the handles together straight in front of you. Keep your shoulder blades retracted as you execute the movement.\nAfter pausing at full extension, return to the starting position, keeping tension on the cables.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Incline_Cable_Chest_Press/0.jpg",
             "category": "strength",
@@ -2379,7 +2438,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Inclinado Mancuerna Aperturases - With A Twist",
+            "name": "Inclinado Mancuerna Aperturases - With a Twist",
             "instructions": "Hold a dumbbell in each hand and lie on an incline bench that is set to an incline angle of no more than 30 degrees.\nExtend your arms above you with a slight bend at the elbows.\nNow rotate the wrists so that the palms of your hands are facing you. Tip: The pinky fingers should be next to each other. This will be your starting position.\nAs you breathe in, start to slowly lower the arms to the side while keeping the arms extended and while rotating the wrists until the palms of the hand are facing each other. Tip: At the end of the movement the arms will be by your side with the palms facing the ceiling.\nAs you exhale start to bring the dumbbells back up to the starting position by reversing the motion and rotating the hands so that the pinky fingers are next to each other again. Tip: Keep in mind that the movement will only happen at the shoulder joint and at the wrist. There is no motion that happens at the elbow joint.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Incline_Dumbbell_Flyes_-_With_A_Twist/0.jpg",
             "category": "strength",
@@ -2489,7 +2548,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Leverage Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Load an appropriate weight onto the pins and adjust the seat for your height. The handles should be near the bottom or middle of the pectorals at the beginning of the motion.\nYour chest and head should be up and your shoulder blades retracted. This will be your starting position.\nPress the handles forward by extending through the elbow.\nAfter a brief pause at the top, return the weight just above the start position, keeping tension on the muscles by not returning the weight to the stops until the set is complete.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Leverage_Chest_Press/0.jpg",
             "category": "strength",
@@ -2500,7 +2559,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Leverage Decline Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Load an appropriate weight onto the pins and adjust the seat for your height. The handles should be near the bottom of the pectorals at the beginning of the motion. Your chest and head should be up and your shoulder blades retracted. This will be your starting position.\nPress the handles forward by extending through the elbow.\nAfter a brief pause at the top, return the weight just above the start position, keeping tension on the muscles by not returning the weight to the stops until the set is complete.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Leverage_Decline_Chest_Press/0.jpg",
             "category": "strength",
@@ -2511,7 +2570,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Leverage Incline Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Load an appropriate weight onto the pins and adjust the seat for your height. The handles should be near the top of the pectorals at the beginning of the motion. Your chest and head should be up and your shoulder blades retracted. This will be your starting position.\nPress the handles forward by extending through the elbow.\nAfter a brief pause at the top, return the weight just above the start position, keeping tension on the muscles by not returning the weight to the stops until the set is complete.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Leverage_Incline_Chest_Press/0.jpg",
             "category": "strength",
@@ -2742,7 +2801,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Standing Cable Chest Press",
+            "name": "Press de Pecho",
             "instructions": "Position dual pulleys to chest height and select an appropriate weight. Stand a foot or two in front of the cables, holding one in each hand. You can stagger your stance for better stability.\nPosition the upper arm at a 90 degree angle with the shoulder blades together. This will be your starting position.\nKeeping the rest of the body stationary, extend through the elbows to press the handles forward, drawing them together in front of you.\nPause at the top of the motion, and return to the starting position.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Standing_Cable_Chest_Press/0.jpg",
             "category": "strength",
@@ -2817,6 +2876,96 @@
             "instructions_es": "Lie down on a Declinado bench with both Piernas securely locked in position. Reach for the Barra behind the head using a pronated grip (palms facing out). Make sure to grab the Barra wider than Hombro width apart for this exercise. SBajoly lift the Barra up from the Suelo by using your arms. When positioned properly, your arms should be fully extended and perpendicular to the Suelo. This is the starting position. Begin by moving the Barra Espalda down in a semicircular motion as if you were going to place it on the Suelo, but instead, stop when the arms are parallel to the Suelo. Tip: Keep the arms fully extended at all times. The movement should only happen at the Hombro joint. Inhale as you perform this portion of the movement. Now bring the Barra up while exhaling until you are Espalda at the starting position. Remember to keep full control of the Barra at all times. Repeat the movement for the prescribed amount of repetitions of your training program. When finished with your set, sBajoly Bajoer the Barra Espalda down until it is level with your head and release it.",
             "videoId": "YLmUNLWpDQ4",
             "parent_cat": "Pecho"
+        },
+        {
+            "name": "Press Hammer",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "4Y2ZdHCOXok",
+            "videoId": "4Y2ZdHCOXok",
+            "gif": "",
+            "instructions": "Realiza Press Hammer manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Press con Barra",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "rT7DgCr-3pg",
+            "videoId": "rT7DgCr-3pg",
+            "gif": "",
+            "instructions": "Realiza Press con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Pec Fly (con Máquina)",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "Z57CtFmRMxA",
+            "videoId": "Z57CtFmRMxA",
+            "gif": "",
+            "instructions": "Realiza Pec Fly (con Máquina) manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Pec Fly (con Mancuernas)",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "eozdVDA78K0",
+            "videoId": "eozdVDA78K0",
+            "gif": "",
+            "instructions": "Realiza Pec Fly (con Mancuernas) manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Press en Punta",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "VRZl7E5a56w",
+            "videoId": "VRZl7E5a56w",
+            "gif": "",
+            "instructions": "Realiza Press en Punta manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Cruces en Polea",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "taI4XduCuUY",
+            "videoId": "taI4XduCuUY",
+            "gif": "",
+            "instructions": "Realiza Cruces en Polea manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Press Inclinada con Mancuerna",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "8iPEnn-ltC8",
+            "videoId": "8iPEnn-ltC8",
+            "gif": "",
+            "instructions": "Realiza Press Inclinada con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Prensa de Suelo",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "uUGDRwge4F8",
+            "videoId": "uUGDRwge4F8",
+            "gif": "",
+            "instructions": "Realiza Prensa de Suelo manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Dips de Pecho",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "2yER-d2-T_M",
+            "videoId": "2yER-d2-T_M",
+            "gif": "",
+            "instructions": "Realiza Dips de Pecho manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Apertura en Banco",
+            "muscle": "Pecho",
+            "category": "strength",
+            "video": "eozdVDA78K0",
+            "videoId": "eozdVDA78K0",
+            "gif": "",
+            "instructions": "Realiza Apertura en Banco manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Antebrazos": [
@@ -2898,7 +3047,7 @@
             "parent_cat": "Antebrazos"
         },
         {
-            "name": "Palms-down Dumbbell Wrist Curl Over A Bench",
+            "name": "Palms-down Dumbbell Wrist Curl Over a Bench",
             "instructions": "Start out by placing two dumbbells on one side of a flat bench.\nKneel down on both of your knees so that your body is facing the flat bench.\nUse your arms to grab both of the dumbbells with a pronated grip (palms facing down) and bring them up so that your forearms are resting against the flat bench. Your wrists should be hanging over the edge.\nStart out by curling your wrist upwards and exhaling.\nSlowly lower your wrists back down to the starting position while inhaling.\nYour forearms should be stationary as your wrist is the only movement needed to perform this exercise.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Palms-Down_Dumbbell_Wrist_Curl_Over_A_Bench/0.jpg",
             "category": "strength",
@@ -2920,7 +3069,7 @@
             "parent_cat": "Antebrazos"
         },
         {
-            "name": "Palms-up Barbell Wrist Curl Over A Bench",
+            "name": "Palms-up Barbell Wrist Curl Over a Bench",
             "instructions": "Start out by placing a barbell on one side of a flat bench.\nKneel down on both of your knees so that your body is facing the flat bench.\nUse your arms to grab the barbell with a supinated grip (palms up) and bring them up so that your forearms are resting against the flat bench. Your wrists should be hanging over the edge.\nStart out by curling your wrist upwards and exhaling.\nSlowly lower your wrists back down to the starting position while inhaling.\nYour forearms should be stationary as your wrist is the only movement needed to perform this exercise.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Palms-Up_Barbell_Wrist_Curl_Over_A_Bench/0.jpg",
             "category": "strength",
@@ -2931,7 +3080,7 @@
             "parent_cat": "Antebrazos"
         },
         {
-            "name": "Palms-up Dumbbell Wrist Curl Over A Bench",
+            "name": "Palms-up Dumbbell Wrist Curl Over a Bench",
             "instructions": "Start out by placing two dumbbells on one side of a flat bench.\nKneel down on both of your knees so that your body is facing the flat bench.\nUse your arms to grab both of the dumbbells with a supinated grip (palms up) and bring them up so that your forearms are resting against the flat bench. Your wrists should be hanging over the edge.\nStart out by curling your wrist upwards and exhaling.\nSlowly lower your wrists back down to the starting position while inhaling. Make sure to inhale during this part of the exercise.\nYour forearms should be stationary as your wrist is the only movement needed to perform this exercise.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Palms-Up_Dumbbell_Wrist_Curl_Over_A_Bench/0.jpg",
             "category": "strength",
@@ -3109,7 +3258,7 @@
             "parent_cat": "Glúteos"
         },
         {
-            "name": "Barra Cadera Thrust",
+            "name": "Hip Thrust",
             "instructions": "Begin seated on the ground with a bench directly behind you. Have a loaded barbell over your legs. Using a fat bar or having a pad on the bar can greatly reduce the discomfort caused by this exercise.\nRoll the bar so that it is directly above your hips, and lean back against the bench so that your shoulder blades are near the top of it.\nBegin the movement by driving through your feet, extending your hips vertically through the bar. Your weight should be supported by your shoulder blades and your feet. Extend as far as possible, then reverse the motion to return to the starting position.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Barbell_Hip_Thrust/0.jpg",
             "category": "powerlifting",
@@ -3327,6 +3476,24 @@
             "instructions_es": "Stand facing a Cajón or bench of an appropriate height with your feet together. This will be your starting position. Begin the movement by stepping up, putting your left foot on the top of the bench. Extend through the Cadera and knee of your Frontal Pierna to stand up on the Cajón. As you stand on the Cajón with your left Pierna, flex your right knee and Cadera, bringing your knee as Alto as you can. Inverso this motion to step down off the Cajón, and then repeat the sequence on the opposite Pierna.",
             "videoId": "mw6iqu9K8DY",
             "parent_cat": "Glúteos"
+        },
+        {
+            "name": "Multi-hip",
+            "muscle": "Glúteos",
+            "category": "strength",
+            "video": "",
+            "videoId": "placeholder_video_id",
+            "gif": "",
+            "instructions": "Realiza Multi-hip manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Glúteos en Polea",
+            "muscle": "Glúteos",
+            "category": "strength",
+            "video": "D1kC_1c4h_s",
+            "videoId": "D1kC_1c4h_s",
+            "gif": "",
+            "instructions": "Realiza Glúteos en Polea manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Isquiotibiales": [
@@ -4193,6 +4360,24 @@
             "videoId": "1Tq32sToyks",
             "instructions": "Siéntate en la máquina y coloca los tobillos sobre el cojín. Contrae los isquiotibiales para flexionar las piernas hacia abajo.",
             "category": "strength"
+        },
+        {
+            "name": "Leg Curl",
+            "muscle": "Isquiotibiales",
+            "category": "strength",
+            "video": "1Tq32sToyks",
+            "videoId": "1Tq32sToyks",
+            "gif": "",
+            "instructions": "Realiza Leg Curl manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Peso Muerto con Barra",
+            "muscle": "Isquiotibiales",
+            "category": "strength",
+            "video": "op9kVnSso6Q",
+            "videoId": "op9kVnSso6Q",
+            "gif": "",
+            "instructions": "Realiza Peso Muerto con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Dorsales": [
@@ -4318,7 +4503,7 @@
             "parent_cat": "Dorsales"
         },
         {
-            "name": "Kipping Muslo Up",
+            "name": "Muscle Up",
             "instructions": "Grip the rings using a false grip, with the base of your palms on top of the rings.\nBegin with a movement swinging your legs backward slightly.\nCounter that movement by swinging your legs forward and up, jerking your chin and chest back, pulling yourself up with both arms as you do so. As you reach the top position of the pull-up, pull the rings to your armpits as you roll your shoulders forward, allowing your elbows to move straight back behind you. This puts you into the proper position to continue into the dip portion of the movement.\nMaintaining control and stability, extend through the elbow to complete the motion.\nUse care when lowering yourself to the ground.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Kipping_Muscle_Up/0.jpg",
             "category": "strength",
@@ -4428,17 +4613,6 @@
             "parent_cat": "Dorsales"
         },
         {
-            "name": "Sobre la Cabeza Lat",
-            "instructions": "Sit upright on the floor with your partner behind you. Raise one arm straight up, and flex the elbow, attempting to touch your hand to your back. Your parner should hold your tricep and wrist. This will be your starting position.\nAttempt to pull your upper arm to your side as your partner prevents you from doing actually doing so.\nAfter 10-20 seconds, relax the arm and allow your partner to further stretch the lat by applying gentle pressure to the tricep. Hold for 10-20 seconds, and then switch sides.",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Overhead_Lat/0.jpg",
-            "category": "stretching",
-            "name_en": "Overhead Lat",
-            "instructions_en": "Sit upright on the floor with your partner behind you. Raise one arm straight up, and flex the elbow, attempting to touch your hand to your back. Your parner should hold your tricep and wrist. This will be your starting position.\nAttempt to pull your upper arm to your side as your partner prevents you from doing actually doing so.\nAfter 10-20 seconds, relax the arm and allow your partner to further stretch the lat by applying gentle pressure to the tricep. Hold for 10-20 seconds, and then switch sides.",
-            "instructions_es": "Sit Vertical on the Suelo with your partner behind you. Elevación Un Brazo straight up, and flex the elbow, attempting to touch your hand to your Espalda. Your parner should hold your tricep and Muñeca. This will be your starting position. Attempt to pull your upper arm to your Lateral as your partner prevents you from doing actually doing so. After 10-20 seconds, relax the arm and alBajo your partner to further stretch the lat by appRecostado gentle Pressure to the tricep. Hold for 10-20 seconds, and then switch Laterals.",
-            "videoId": "w0fwEpRMp3w",
-            "parent_cat": "Dorsales"
-        },
-        {
             "name": "Sobre la Cabeza Slam",
             "instructions": "Hold a medine ball with both hands and stand with your feet at shoulder width. This will be your starting position.\nInitiate the countermovement by raising the ball above your head and fully extending your body.\nReverse the motion, slamming the ball into the ground directly in front of you as hard as you can.\nReceive the ball with both hands on the bounce and repeat the movement.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Overhead_Slam/0.jpg",
@@ -4502,17 +4676,6 @@
             "instructions_en": "First lie on your left side, bending your left knee in front of you to stabilize your torso (use your abdominal muscles as well to hold you upright).\nStraighten your right leg and rest the right foot on the floor behind your left. Straighten your right arm over your head and gently pull on your right wrist to stretch the entire right side of the body. Switch sides.",
             "instructions_es": "First lie on your left Lateral, bending your left knee in Frontal of you to stabilize your torso (use your Abdominal Muslos as well to hold you Vertical). Straighten your right Pierna and rest the right foot on the Suelo behind your left. Straighten your right arm over your head and gently pull on your right Muñeca to stretch the entire right Lateral of the body. Switch Laterals.",
             "videoId": "DMlSdmsHEeI",
-            "parent_cat": "Dorsales"
-        },
-        {
-            "name": "Lateral To Lateral Chins",
-            "instructions": "Grab the pull-up bar with the palms facing forward using a wide grip.\nAs you have both arms extended in front of you holding the bar at a wide grip, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position.\nPull your torso up while leaning to the left hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The forearms should do no other work other than hold the bar.\nAfter a second of contraction, inhale as you go back to the starting position.\nNow, pull your torso up while leaning to the right hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar.\nAfter a second of contraction, inhale as you go back to the starting position.\nRepeat steps 3-6 until you have performed the prescribed amount of repetitions for each side.",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Side_To_Side_Chins/0.jpg",
-            "category": "strength",
-            "name_en": "Side To Side Chins",
-            "instructions_en": "Grab the pull-up bar with the palms facing forward using a wide grip.\nAs you have both arms extended in front of you holding the bar at a wide grip, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position.\nPull your torso up while leaning to the left hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The forearms should do no other work other than hold the bar.\nAfter a second of contraction, inhale as you go back to the starting position.\nNow, pull your torso up while leaning to the right hand side until the bar almost touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar.\nAfter a second of contraction, inhale as you go back to the starting position.\nRepeat steps 3-6 until you have performed the prescribed amount of repetitions for each side.",
-            "instructions_es": "Grab the pull-up bar with the palms facing forward using a Agarre Ancho. As you have both arms extended in Frontal of you holding the bar at a Agarre Ancho, bring your torso Espalda around 30 degrees or so while creating a curvature on your Bajoer Espalda and sticking your Pecho out. This is your starting position. Pull your torso up while leaning to the left hand Lateral until the bar almost touches your upper Pecho by drawing the Hombros and the upper arms down and Espalda. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the Espalda Muslos once you reach the full contracted position. The upper torso should remain stationary as it moves through space (no swinging) and only the arms should move. The foPosteriorms should do no other work other than hold the bar. After a second of contraction, inhale as you go Espalda to the starting position. Now, pull your torso up while leaning to the right hand Lateral until the bar almost touches your upper Pecho by drawing the Hombros and the upper arms down and Espalda. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the Espalda Muslos once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The foPosteriorms should do no other work other than hold the bar. After a second of contraction, inhale as you go Espalda to the starting position. Repeat steps 3-6 until you have performed the prescribed amount of repetitions for each Lateral.",
-            "videoId": "nFaJ9sIpVUM",
             "parent_cat": "Dorsales"
         },
         {
@@ -4716,7 +4879,7 @@
             "parent_cat": "Lumbares"
         },
         {
-            "name": "Hug A Ball",
+            "name": "Hug a Ball",
             "instructions": "Seat yourself on the floor.\nStraddle an exercise ball between both legs and lower your hips down toward the floor.\nHug your arms around the ball to support your body. Adjust your legs so that your feet are flat on the floor and your knees line up over your ankles. Keep a good grip on the ball so it doesn't roll away from you and send you back onto your buttocks.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Hug_A_Ball/0.jpg",
             "category": "stretching",
@@ -5315,7 +5478,7 @@
             "instructions_en": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack to just below shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.\nHold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section).\nBegin to slowly lower the bar by bending the knees and hips as you maintain a straight posture with the head up. Continue down until the angle between the upper leg and the calves becomes slightly less than 90-degrees. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor with the heel of your foot as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Barbell Squat To A Bench",
+            "name": "Barbell Squat To a Bench",
             "instructions": "This exercise is best performed inside a squat rack for safety purposes. To begin, first place a flat bench or a box behind you. The flat bench is used to teach you to set your hips back and to hit depth.\n\nThen, set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.\nHold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section).\nBegin to slowly lower the bar by bending the knees and sitting your hips back as you maintain a straight posture with the head up. Continue down until you slightly touch the bench behind you. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor with the heel of your foot as you straighten the legs and extend the hips to go back to the starting position.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Barbell_Squat_To_A_Bench/0.jpg",
             "category": "strength",
@@ -5565,7 +5728,7 @@
             "instructions_en": "Stand up straight while holding a dumbbell on each hand (palms facing the side of your legs).\nPosition your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section.\nBegin to slowly lower your torso by bending the knees as you maintain a straight posture with the head up. Continue down until your thighs are parallel to the floor. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise your torso as you exhale by pushing the floor with the heel of your foot mainly as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Dumbbell Squat To A Bench",
+            "name": "Dumbbell Squat To a Bench",
             "instructions": "Stand up straight with a flat bench behind you while holding a dumbbell on each hand (palms facing the side of your legs).\nPosition your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section.\nBegin to slowly lower your torso by bending the knees as you maintain a straight posture with the head up. Continue down until you slightly touch the bench behind you. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor with the heel of your foot mainly as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Dumbbell_Squat_To_A_Bench/0.jpg",
             "category": "strength",
@@ -5651,7 +5814,7 @@
             "instructions_en": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, bring your arms up under the bar while keeping the elbows high and the upper arm slightly above parallel to the floor. Rest the bar on top of the deltoids and cross your arms while grasping the bar for total control.\nLift the bar off the rack by first pushing with your legs and at the same time straightening your torso.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section).\nBegin to slowly lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until the angle between the upper leg and the calves becomes slightly less than 90-degrees (which is the point in which the upper legs are below parallel to the floor). Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor mainly with the middle of your foot as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Front Barbell Squat To A Bench",
+            "name": "Front Barbell Squat To a Bench",
             "instructions": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set a flat bench behind you and set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, bring your arms up under the bar while keeping the elbows high and the upper arm slightly above parallel to the floor. Rest the bar on top of the deltoids and cross your arms while grasping the bar for total control.\nLift the bar off the rack by first pushing with your legs and at the same time straightening your torso.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section).\nBegin to slowly lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until you touch the bench with your glutes. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor mainly with the heel of your foot as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Front_Barbell_Squat_To_A_Bench/0.jpg",
             "category": "strength",
@@ -6641,6 +6804,42 @@
             "videoId": "gD7EcgDTMDo",
             "name_en": "Zercher Squats",
             "instructions_en": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack that best matches your height. The correct height should be anywhere above the waist but below the chest. Once the correct height is chosen and the bar is loaded, lock your hands together and place the bar on top of your arms in between the forearm and upper arm.\nLift the bar up so that it is resting on top of your forearms. If you are holding the bar properly, it should look as if you have your arms crossed but with a bar running across them.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section).\nBegin to lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until the angle between the upper leg and the calves becomes slightly less than 90-degrees (which is the point in which the upper legs are below parallel to the floor). Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor with the ball of your foot mainly as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions."
+        },
+        {
+            "name": "Prensa 45º",
+            "muscle": "Cuádriceps",
+            "category": "strength",
+            "video": "yZ96rflrE4E",
+            "videoId": "yZ96rflrE4E",
+            "gif": "",
+            "instructions": "Realiza Prensa 45º manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Leg Extension",
+            "muscle": "Cuádriceps",
+            "category": "strength",
+            "video": "YyvSfVjQeL0",
+            "videoId": "YyvSfVjQeL0",
+            "gif": "",
+            "instructions": "Realiza Leg Extension manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Sentadilla Sissy",
+            "muscle": "Cuádriceps",
+            "category": "strength",
+            "video": "SZ_J7s2L2g0",
+            "videoId": "SZ_J7s2L2g0",
+            "gif": "",
+            "instructions": "Realiza Sentadilla Sissy manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Sentadilla con Barra",
+            "muscle": "Cuádriceps",
+            "category": "strength",
+            "video": "ultWZbUMPL8",
+            "videoId": "ultWZbUMPL8",
+            "gif": "",
+            "instructions": "Realiza Sentadilla con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Hombros": [
@@ -6876,17 +7075,6 @@
             "parent_cat": "Hombros"
         },
         {
-            "name": "Car Drivers",
-            "instructions": "While standing upright, hold a barbell plate in both hands at the 3 and 9 o'clock positions. Your palms should be facing each other and your arms should be extended straight out in front of you. This will be your starting position.\nInitiate the movement by rotating the plate as far to one side as possible. Use the same type of movement you would use to turn a steering wheel to one side.\nReverse the motion, turning it all the way to the opposite side.\nRepeat for the recommended amount of repetitions.",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Car_Drivers/0.jpg",
-            "category": "strength",
-            "name_en": "Car Drivers",
-            "instructions_en": "While standing upright, hold a barbell plate in both hands at the 3 and 9 o'clock positions. Your palms should be facing each other and your arms should be extended straight out in front of you. This will be your starting position.\nInitiate the movement by rotating the plate as far to one side as possible. Use the same type of movement you would use to turn a steering wheel to one side.\nReverse the motion, turning it all the way to the opposite side.\nRepeat for the recommended amount of repetitions.",
-            "instructions_es": "While De Pie Vertical, hold a Barra Disco in both hands at the 3 and 9 o'clock positions. Your palms should be facing each other and your arms should be extended straight out in Frontal of you. This will be your starting position. Initiate the movement by rotating the Disco as far to one Lateral as possible. Use the same type of movement you would use to turn a steering wheel to one Lateral. Inverso the motion, turning it all the way to the opposite Lateral. Repeat for the recommended amount of repetitions.",
-            "videoId": "IOeoE1su2jU",
-            "parent_cat": "Hombros"
-        },
-        {
             "name": "Chair Upper Body Stretch",
             "instructions": "Sit on the edge of a chair, gripping the back of it.\nStraighten your arms, keeping your back straight, and pull your upper body forward so you feel a stretch. Hold for 20-30 seconds.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Chair_Upper_Body_Stretch/0.jpg",
@@ -7118,7 +7306,7 @@
             "parent_cat": "Hombros"
         },
         {
-            "name": "Jalón A la Cara",
+            "name": "Jalón a la Cara",
             "instructions": "Facing a high pulley with a rope or dual handles attached, pull the weight directly towards your face, separating your hands as you do so. Keep your upper arms parallel to the ground.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Face_Pull/0.jpg",
             "category": "strength",
@@ -7151,7 +7339,7 @@
             "parent_cat": "Hombros"
         },
         {
-            "name": "Frontal Inclinado Mancuerna Elevación",
+            "name": "Press Inclinado con Mancuerna",
             "instructions": "Sit down on an incline bench with the incline set anywhere between 30 to 60 degrees while holding a dumbbell on each hand. Tip: You can change the angle to hit the muscle a little differently each time.\nExtend your arms straight in front of you and have your palms facing down with the dumbbells raised about 1 inch above your thighs. This will be your starting position.\nSlowly raise the dumbbells straight up until they are slightly above your shoulders, while keeping your elbows locked. Squeeze at the top for a second and make sure you breathe out during this portion of the movement. Tip: Keep your head resting down against the bench and your legs on the floor at all times.\nLower the arms back to the starting position as you inhale.\nRepeat for the recommended amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Front_Incline_Dumbbell_Raise/0.jpg",
             "category": "strength",
@@ -7873,14 +8061,14 @@
             "parent_cat": "Hombros"
         },
         {
-            "name": "Standing Dumbbell Press",
+            "name": "Press Arnold",
             "instructions": "Standing with your feet shoulder width apart, take a dumbbell in each hand. Raise the dumbbells to head height, the elbows out and about 90 degrees. This will be your starting position.\nMaintaining strict technique with no leg drive or leaning back, extend through the elbow to raise the weights together directly above your head.\nPause, and slowly return the weight to the starting position.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Standing_Dumbbell_Press/0.jpg",
             "category": "strength",
             "name_en": "Standing Dumbbell Press",
             "instructions_en": "Standing with your feet shoulder width apart, take a dumbbell in each hand. Raise the dumbbells to head height, the elbows out and about 90 degrees. This will be your starting position.\nMaintaining strict technique with no leg drive or leaning back, extend through the elbow to raise the weights together directly above your head.\nPause, and slowly return the weight to the starting position.",
             "instructions_es": "De Pie with your feet Hombro width apart, take a Mancuerna in each hand. Elevación the Mancuernas to head height, the elbows out and about 90 degrees. This will be your starting position. Maintaining Estricto technique with no Pierna drive or leaning Espalda, extend through the elbow to Elevación the weights together directly above your head. Pause, and sBajoly return the weight to the starting position.",
-            "videoId": "wO0l5jW2NtQ",
+            "videoId": "3ml7BH7m7SE",
             "parent_cat": "Hombros"
         },
         {
@@ -8025,6 +8213,60 @@
             "instructions_es": "Extend both hands straight above your head, palms touching. SBajoly push your hands up and Espalda, keeping your Espalda straight.",
             "videoId": "cUhqjQmQWEs",
             "parent_cat": "Hombros"
+        },
+        {
+            "name": "Press Militar",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "2yjwXTZQDDI",
+            "videoId": "2yjwXTZQDDI",
+            "gif": "",
+            "instructions": "Realiza Press Militar manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Vuelos Frontales con Mancuerna",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "-t7fuZ0KhDA",
+            "videoId": "-t7fuZ0KhDA",
+            "gif": "",
+            "instructions": "Realiza Vuelos Frontales con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Vuelos Laterales con Mancuerna",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "3VcKaXpzqRo",
+            "videoId": "3VcKaXpzqRo",
+            "gif": "",
+            "instructions": "Realiza Vuelos Laterales con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Vuelos Posteriores con Mancuerna",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "zPqy0aTdvx8",
+            "videoId": "zPqy0aTdvx8",
+            "gif": "",
+            "instructions": "Realiza Vuelos Posteriores con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Flexiones en V",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "sposDXWW0Uk",
+            "videoId": "sposDXWW0Uk",
+            "gif": "",
+            "instructions": "Realiza Flexiones en V manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Tirón al Mentón",
+            "muscle": "Hombros",
+            "category": "strength",
+            "video": "amCU-ziCQiQ",
+            "videoId": "amCU-ziCQiQ",
+            "gif": "",
+            "instructions": "Realiza Tirón al Mentón manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Trapecios": [
@@ -8344,7 +8586,7 @@
             "parent_cat": "Tríceps"
         },
         {
-            "name": "Agarre Cerrado Push-up Off Of A Mancuerna",
+            "name": "Agarre Cerrado Push-up Off Of a Mancuerna",
             "instructions": "Lie on the floor and place your hands on an upright dumbbell. Supporting your weight on your toes and hands, keep your torso rigid and your elbows in with your arms straight. This will be your starting position.\nLower your body, allowing the elbows to flex while you inhale. Keep your body straight, not allowing your hips to rise or sag.\nPress yourself back up to the starting position by extending the elbows. Breathe out as you perform this step.\nAfter a pause at the contracted position, repeat the movement for the prescribed amount of repetitions.",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Close-Grip_Push-Up_off_of_a_Dumbbell/0.jpg",
             "category": "strength",
@@ -8974,6 +9216,78 @@
             "videoId": "IODxDxX7oi4",
             "instructions": "Manos a la altura de los hombros, codos pegados al cuerpo para mayor énfasis en tríceps. Mantén el cuerpo recto.",
             "category": "strength"
+        },
+        {
+            "name": "Press Francés",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "jP7DNKQpiGs",
+            "videoId": "jP7DNKQpiGs",
+            "gif": "",
+            "instructions": "Realiza Press Francés manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Dips de Tríceps",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "2yER-d2-T_M",
+            "videoId": "2yER-d2-T_M",
+            "gif": "",
+            "instructions": "Realiza Dips de Tríceps manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Skullcrushers",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "d_KZxkH_0cM",
+            "videoId": "d_KZxkH_0cM",
+            "gif": "",
+            "instructions": "Realiza Skullcrushers manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Arm Extension (Máquina)",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "",
+            "videoId": "placeholder_video_id",
+            "gif": "",
+            "instructions": "Realiza Arm Extension (Máquina) manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Extensión en Polea con Barra",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "2-LAMcPzUEo",
+            "videoId": "2-LAMcPzUEo",
+            "gif": "",
+            "instructions": "Realiza Extensión en Polea con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Extensión en Polea con Soga",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "kiUkJGJqbDA",
+            "videoId": "kiUkJGJqbDA",
+            "gif": "",
+            "instructions": "Realiza Extensión en Polea con Soga manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Press Cerrado con Barra",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "n575Z1249e4",
+            "videoId": "n575Z1249e4",
+            "gif": "",
+            "instructions": "Realiza Press Cerrado con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Fondo en Banco",
+            "muscle": "Tríceps",
+            "category": "strength",
+            "video": "psRVb56f4dM",
+            "videoId": "psRVb56f4dM",
+            "gif": "",
+            "instructions": "Realiza Fondo en Banco manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Aductores": [
@@ -9171,6 +9485,15 @@
             "parent_cat": "Abductores",
             "videoId": "b8-sJO0TbVk",
             "instructions_en": "Lie on your back with your arms extended out to the sides and your legs straight. This will be your starting position.\nLift one leg and quickly cross it over your body, attempting to touch the ground near the opposite hand.\nReturn to the starting position, and repeat with the opposite leg. Continue to alternate for 10-20 repetitions."
+        },
+        {
+            "name": "Máquina Abductores",
+            "muscle": "Abductores",
+            "category": "strength",
+            "video": "y_t4J9_0xM0",
+            "videoId": "y_t4J9_0xM0",
+            "gif": "",
+            "instructions": "Realiza Máquina Abductores manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ],
     "Oblicuos": [
@@ -9310,6 +9633,98 @@
             "parent_cat": "Oblicuos",
             "videoId": "r0Bu6UNfWUU",
             "instructions_en": "To begin, lie down on an exercise ball with your left side of the torso (waist, hips and shoulder) pressed against the ball.\nYour feet should be on the floor while your legs are crossed and hanging from the ball. Hold a weighted plate with your right hand directly to the right side of your head. Tip: Make sure the smooth side of the plate is resting against your head.\nPlace your left arm across your torso so that your palm is on your obliques. There should be a right angle between your left forearm and upper arm. This is the starting position.\nRaise the side of your torso up by laterally flexing at the waist while exhaling.\nHold the contraction for a second and slowly lower yourself back down to the starting position while inhaling.\nRepeat for the recommended amount of repetitions.\nSwitch sides and repeat the exercise."
+        }
+    ],
+    "Espalda": [
+        {
+            "name": "Dead Hang",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "iC952-pDHKk",
+            "videoId": "iC952-pDHKk",
+            "gif": "",
+            "instructions": "Realiza Dead Hang manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Chin-ups",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "brhRXlOhsAM",
+            "videoId": "brhRXlOhsAM",
+            "gif": "",
+            "instructions": "Realiza Chin-ups manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Pullovers",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "5Y8s6zV8x_0",
+            "videoId": "5Y8s6zV8x_0",
+            "gif": "",
+            "instructions": "Realiza Pullovers manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Vertical Trac",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "",
+            "videoId": "placeholder_video_id",
+            "gif": "",
+            "instructions": "Realiza Vertical Trac manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Lateral Pulldown",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "CAwf7n6Luuc",
+            "videoId": "CAwf7n6Luuc",
+            "gif": "",
+            "instructions": "Realiza Lateral Pulldown manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Remo Bajo",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "GZbfZ033f74",
+            "videoId": "GZbfZ033f74",
+            "gif": "",
+            "instructions": "Realiza Remo Bajo manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Remo Bajo Hammer",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "",
+            "videoId": "placeholder_video_id",
+            "gif": "",
+            "instructions": "Realiza Remo Bajo Hammer manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Remo a Un Brazo con Mancuerna",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "5PoEkso4zVo",
+            "videoId": "5PoEkso4zVo",
+            "gif": "",
+            "instructions": "Realiza Remo a Un Brazo con Mancuerna manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Remo con Barra",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "9efgcRveMFQ",
+            "videoId": "9efgcRveMFQ",
+            "gif": "",
+            "instructions": "Realiza Remo con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
+        },
+        {
+            "name": "Encogimientos con Barra",
+            "muscle": "Espalda",
+            "category": "strength",
+            "video": "NAqCVe2dtWs",
+            "videoId": "NAqCVe2dtWs",
+            "gif": "",
+            "instructions": "Realiza Encogimientos con Barra manteniendo una buena técnica. Controla el movimiento en todo momento."
         }
     ]
 }
