@@ -620,7 +620,10 @@ const GymRoutineApp = () => {
                         <span className="text-[9px] font-bold uppercase">Apariencia</span>
                     </button>
 
-                    <button onClick={() => setActiveTab('routine')} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'routine' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
+                    <button onClick={() => {
+                        setActiveTab('routine');
+                        if (dailyRoutine.length === 0) generateRoutine();
+                    }} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'routine' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
                         <Icon name="Calendar" className="w-5 h-5" />
                         <span className="text-[9px] font-bold uppercase">Rutina</span>
                     </button>
@@ -629,7 +632,14 @@ const GymRoutineApp = () => {
                     <div className="relative -top-8 mx-2">
                         <div className="absolute inset-0 bg-primary-500 blur-xl opacity-40 rounded-full animate-pulse"></div>
                         <button
-                            onClick={activeTab === 'routine' ? generateRoutine : () => setActiveTab('routine')}
+                            onClick={() => {
+                                if (activeTab === 'routine') {
+                                    generateRoutine();
+                                } else {
+                                    setActiveTab('routine');
+                                    if (dailyRoutine.length === 0) generateRoutine();
+                                }
+                            }}
                             className="relative w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white shadow-xl hover:scale-105 active:scale-95 transition-transform border-4 border-slate-950"
                         >
                             <Icon name={isSpinning ? "Dice5" : "Dumbbell"} className={`w-8 h-8 ${isSpinning ? 'animate-spin' : ''}`} />

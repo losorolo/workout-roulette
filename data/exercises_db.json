@@ -595,7 +595,7 @@
             "parent_cat": "Abdominales"
         },
         {
-            "name": "Un Brazo Medicine Ball Slam",
+            "name": "Balón Medicinal",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/One-Arm_Medicine_Ball_Slam/0.jpg",
             "category": "strength",
@@ -1624,17 +1624,6 @@
     ],
     "Gemelos": [
         {
-            "name": "Tobilleras",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Ankle_Circles/0.jpg",
-            "category": "stretching",
-            "videoId": "vN7U-7K0hlQ",
-            "name_en": "Ankle Circles",
-            "instructions_en": "Use a sturdy object like a squat rack to hold yourself.\nLift the right leg in the air (just around 2 inches from the floor) and perform a circular motion with the big toe. Pretend that you are drawing a big circle with it. Tip: One circle equals 1 repetition. Breathe normally as you perform the movement.\nWhen you are done with the right foot, then repeat with the left leg.",
-            "instructions_es": "Use a sturdy object like a Sentadilla rack to hold yourself. Lift the right Pierna in the air (just around 2 inches from the Suelo) and perform a circular motion with the big toe. Pretend that you are drawing a big circle with it. Tip: One circle equals 1 repetition. Breathe normally as you perform the movement. When you are done with the right foot, then repeat with the left Pierna.",
-            "parent_cat": "Gemelos"
-        },
-        {
             "name": "Rmn Tibial Anterior",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Anterior_Tibialis-SMR/0.jpg",
@@ -1877,7 +1866,7 @@
             "parent_cat": "Gemelos"
         },
         {
-            "name": "Standing Soleus And Achilles Stretch",
+            "name": "Ejemplos para el Sóleo",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Standing_Soleus_And_Achilles_Stretch/0.jpg",
             "category": "stretching",
@@ -2251,7 +2240,7 @@
             "parent_cat": "Pecho"
         },
         {
-            "name": "Flat Bench Aperturas en Poleaes",
+            "name": "Aperturas con Mancuernas",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Flat_Bench_Cable_Flyes/0.jpg",
             "category": "strength",
@@ -2794,7 +2783,7 @@
             "muscle": "Pecho",
             "category": "strength",
             "video": "4Y2ZdHCOXok",
-            "videoId": "4Y2ZdHCOXok",
+            "videoId": "M3rI9y3yJg",
             "gif": "",
             "instructions": ""
         },
@@ -3003,7 +2992,7 @@
             "parent_cat": "Antebrazos"
         },
         {
-            "name": "Disco Pinch",
+            "name": "Agarre de Disco",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Plate_Pinch/0.jpg",
             "category": "strength",
@@ -3110,17 +3099,6 @@
             "instructions_en": "Start by standing straight and holding a barbell behind your glutes at arm's length while using a pronated grip (palms will be facing back away from the glutes) and having your hands shoulder width apart from each other.\nYou should be looking straight forward while your feet are shoulder width apart from each other. This is the starting position.\nWhile exhaling, slowly elevate the barbell up by curling your wrist in a semi-circular motion towards the ceiling. Note: Your wrist should be the only body part moving for this exercise.\nHold the contraction for a second and lower the barbell back down to the starting position while inhaling.\nRepeat for the recommended amount of repetitions.\nWhen finished, lower the barbell down to the squat rack or the floor by bending the knees. Tip: It is easiest to either pick it up from a squat rack or have a partner hand it to you.",
             "instructions_es": "Start by De Pie straight and holding a Barra behind your Glúteos at arm's length while using a pronated grip (palms will be facing Espalda away from the Glúteos) and having your hands Hombro width apart from each other. You should be looking straight forward while your feet are Hombro width apart from each other. This is the starting position. While exhaling, sBajoly elevate the Barra up by Curling your Muñeca in a semi-circular motion towards the ceiling. Note: Your Muñeca should be the only body part moving for this exercise. Hold the contraction for a second and Bajoer the Barra Espalda down to the starting position while inhaling. Repeat for the recommended amount of repetitions. When finished, Bajoer the Barra down to the Sentadilla rack or the Suelo by bending the knees. Tip: It is easiest to either pick it up from a Sentadilla rack or have a partner hand it to you.",
             "videoId": "Oa7kaPAj_hE",
-            "parent_cat": "Antebrazos"
-        },
-        {
-            "name": "Muñeca Circles",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Wrist_Circles/0.jpg",
-            "category": "stretching",
-            "name_en": "Wrist Circles",
-            "instructions_en": "Start by standing straight with your feet being shoulder width apart from each other. Elevate your arms to the side of you until they are fully extended and parallel to the floor at a height that is evenly aligned with your shoulders. Tip: Your torso and arms should form the letter \"T: Your palms should be facing down. This is the starting position.\nKeeping your entire body stationary except for the wrists, begin to rotate both wrists forward in a circular motion. Tip: Pretend that you are trying to draw circles by using your hands as the brush. Breathe normally as you perform this exercise.\nRepeat for the recommended amount of repetitions.",
-            "instructions_es": "Start by De Pie straight with your feet being Hombro width apart from each other. Elevate your arms to the Lateral of you until they are fully extended and parallel to the Suelo at a height that is evenly aligned with your Hombros. Tip: Your torso and arms should form the letter \"T: Your palms should be facing down. This is the starting position. Keeping your entire body stationary except for the Muñecas, begin to rotate both Muñecas forward in a circular motion. Tip: Pretend that you are trying to draw circles by using your hands as the brush. Breathe normally as you perform this exercise. Repeat for the recommended amount of repetitions.",
-            "videoId": "G6fvJlXqVn8",
             "parent_cat": "Antebrazos"
         },
         {
@@ -3258,7 +3236,7 @@
             "parent_cat": "Glúteos"
         },
         {
-            "name": "Arrodillado Salto Sentadilla",
+            "name": "Salto de Rodillas a Sentadilla",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Kneeling_Jump_Squat/0.jpg",
             "category": "olympic weightlifting",
@@ -3269,7 +3247,7 @@
             "parent_cat": "Glúteos"
         },
         {
-            "name": "Sentadilla Arrodillado",
+            "name": "Arrodillado a Sentadilla",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Kneeling_Squat/0.jpg",
             "category": "powerlifting",
@@ -3531,7 +3509,7 @@
             "parent_cat": "Isquiotibiales"
         },
         {
-            "name": "Mancuerna Cargada",
+            "name": "Cargada de Potencia con Mancuernas",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Dumbbell_Clean/0.jpg",
             "category": "strength",
@@ -3663,7 +3641,7 @@
             "parent_cat": "Isquiotibiales"
         },
         {
-            "name": "Hurdle Hops",
+            "name": "Saltos de Valla",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Hurdle_Hops/0.jpg",
             "category": "plyometrics",
@@ -4380,7 +4358,7 @@
             "parent_cat": "Dorsales"
         },
         {
-            "name": "Dynamic Back Stretch",
+            "name": "Estiramientos de Espalda",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Dynamic_Back_Stretch/0.jpg",
             "category": "stretching",
@@ -5745,7 +5723,7 @@
             "instructions_en": "This exercise is best performed inside a squat rack for safety purposes. To begin, first set a flat bench behind you and set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, bring your arms up under the bar while keeping the elbows high and the upper arm slightly above parallel to the floor. Rest the bar on top of the deltoids and cross your arms while grasping the bar for total control.\nLift the bar off the rack by first pushing with your legs and at the same time straightening your torso.\nStep away from the rack and position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section).\nBegin to slowly lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until you touch the bench with your glutes. Inhale as you perform this portion of the movement. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.\nBegin to raise the bar as you exhale by pushing the floor mainly with the heel of your foot as you straighten the legs again and go back to the starting position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Front Cone Hops (Or Hurdle Hops)",
+            "name": "Saltos de Valla",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Front_Cone_Hops_or_hurdle_hops/0.jpg",
             "category": "plyometrics",
@@ -6196,15 +6174,6 @@
             "videoId": "2d2wXoOsq4k",
             "name_en": "Rickshaw Deadlift",
             "instructions_en": "Load the frame with the desired weight. Center yourself between the handles. You feet should be about hip width apart. Bend at the hips to grip the handles, allowing your shoulder blades to protract.\nWith your feet and your grip set, take a big breath and then lower your hips and flex the knees. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.\nLower the weight by bending at the hips and guiding it to the ground."
-        },
-        {
-            "name": "Rocket Jump",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Rocket_Jump/0.jpg",
-            "category": "plyometrics",
-            "parent_cat": "Cuádriceps",
-            "videoId": "iJZqWFhp0Bk",
-            "instructions_en": "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.\nTo initiate the move, squat down halfway and explode back up as high as possible.\nFully extend your entire body, reaching overhead as far as possible. As you land, absorb your impact through the legs."
         },
         {
             "name": "Rowing, Stationary",
@@ -8222,7 +8191,7 @@
             "instructions_en": "Grasp a cable bar attachment that is attached to a low pulley with a shoulder width or slightly wider overhand (palms facing down) grip.\nStand erect close to the pulley with your arms extended in front of you holding the bar. This will be your starting position.\nLift the bar by elevating the shoulders as high as possible as you exhale. Hold the contraction at the top for a second. Tip: The arms should remain extended at all times. Refrain from using the biceps to help lift the bar. Only the shoulders should be moving up and down.\nLower the bar back to the original position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Calf-machine Shoulder Shrug",
+            "name": "Encogimiento con Máquina de Gemelos",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Calf-Machine_Shoulder_Shrug/0.jpg",
             "category": "strength",
@@ -8300,12 +8269,12 @@
             "instructions_en": "To begin, set the bar on the smith machine to a height that is around the middle of your thighs. Once the correct height is chosen and the bar is loaded, grasp the bar using a pronated (palms forward) grip that is shoulder width apart. You may need some wrist wraps if using a significant amount of weight.\nLift the barbell up and fully extend your arms with your back straight. There should be a slight bend at the elbows. This is the starting position.\nUse your side shoulders to lift the bar as you exhale. The bar should be close to the body as you move it up. Continue to lift it until it nearly touches your chin. Tip: Your elbows should drive the motion. As you lift the bar, your elbows should always be higher than your forearms. Also, keep your torso stationary and pause for a second at the top of the movement.\nLower the bar back down slowly to the starting position. Inhale as you perform this portion of the movement.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Snatch Shrug",
+            "name": "Encogimiento con Barra",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Snatch_Shrug/0.jpg",
             "category": "olympic weightlifting",
             "parent_cat": "Trapecios",
-            "videoId": "YDTuaW0mPu0",
+            "videoId": "NAqCVe2dtWs",
             "name_en": "Snatch Shrug",
             "instructions_en": "Begin with a wide grip, with the bar hanging at the mid thigh position. You can use a hook or overhand grip. Your back should be straight and inclined slightly forward.\nShrug your shoulders towards your ears. While this exercise can usually by loaded with heavier weight than a snatch, avoid overloading to the point that the execution slows down."
         },
@@ -8408,7 +8377,7 @@
             "parent_cat": "Tríceps"
         },
         {
-            "name": "Body Tricep Press",
+            "name": "Ejercicios Tríceps",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Body_Tricep_Press/0.jpg",
             "category": "strength",
@@ -8705,7 +8674,7 @@
             "parent_cat": "Tríceps"
         },
         {
-            "name": "Lying Close-grip Barbell Triceps Press To Chin",
+            "name": "Press Francés con Barra de Agarre Cerrado",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Lying_Close-Grip_Barbell_Triceps_Press_To_Chin/0.jpg",
             "category": "strength",
@@ -9240,15 +9209,6 @@
             "instructions_en": "Anchor a band around a solid post or other object.\nStand with your left side to the post, and put your right foot through the band, getting it around the ankle.\nStand up straight and hold onto the post if needed. This will be your starting position.\nKeeping the knee straight, raise your right legs out to the side as far as you can.\nReturn to the starting position and repeat for the desired rep count.\nSwitch sides."
         },
         {
-            "name": "Carioca Quick Step",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Carioca_Quick_Step/0.jpg",
-            "category": "plyometrics",
-            "parent_cat": "Aductores",
-            "videoId": "bY-2MXtmWP8",
-            "instructions_en": "Begin with your feet a few inches apart and your left arm up in a relaxed, athletic position.\nWith your right foot, quick step behind and pull the knee up.\nFire your arms back up when you pull the right knee, being sure that your knee goes straight up and down. Avoid turning your feet as you move and continue to look forward as you move to the side."
-        },
-        {
             "name": "Groin And Back Stretch",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Groin_and_Back_Stretch/0.jpg",
@@ -9322,15 +9282,6 @@
             "videoId": "4IvU_AJZt0w",
             "name_en": "Side Lying Groin Stretch",
             "instructions_en": "Start off by lying on your right side and bend your right knee in front of you to stabilize the torso.\nRest your head on your right hand or shoulder. Lift your left leg upward and hold it by the back of the knee (easier) or the foot (harder).\nPull your left knee in toward your left shoulder and simultaneously press your foot or knee down to the floor. To intensify this stretch, straighten your left leg. Switch sides."
-        },
-        {
-            "name": "Thigh Adductor",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Thigh_Adductor/0.jpg",
-            "category": "strength",
-            "parent_cat": "Aductores",
-            "videoId": "0vAhxeSo-fY",
-            "instructions_en": "To begin, sit down on the adductor machine and select a weight you are comfortable with. When your legs are positioned properly on the leg pads of the machine, grip the handles on each side. Your entire upper body (from the waist up) should be stationary. This is the starting position.\nSlowly press against the machine with your legs to move them towards each other while exhaling.\nFeel the contraction for a second and begin to move your legs back to the starting position while breathing in. Note: Remember to keep your upper body stationary and avoid fast jerking motions in order to prevent any injuries from occurring.\nRepeat for the recommended amount of repetitions."
         }
     ],
     "Abductores": [
@@ -9381,16 +9332,7 @@
             "instructions_en": "Place a band around both ankles and another around both knees. There should be enough tension that they are tight when your feet are shoulder width apart.\nTo begin, take short steps forward alternating your left and right foot.\nAfter several steps, do just the opposite and walk backward to where you started."
         },
         {
-            "name": "Standing Hip Circles",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Standing_Hip_Circles/0.jpg",
-            "category": "stretching",
-            "parent_cat": "Abductores",
-            "videoId": "OvJMG4_nMFc",
-            "instructions_en": "Begin standing on one leg, holding to a vertical support.\nRaise the unsupported knee to 90 degrees. This will be your starting position.\nOpen the hip as far as possible, attempting to make a big circle with your knee.\nPerform this movement slowly for a number of repetitions, and repeat on the other side."
-        },
-        {
-            "name": "Thigh Abductor",
+            "name": "Máquina de Abductores",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Thigh_Abductor/0.jpg",
             "category": "strength",
@@ -9457,7 +9399,7 @@
             "instructions_en": "Stand up straight while holding a dumbbell on the left hand (palms facing the torso) as you have the right hand holding your waist. Your feet should be placed at shoulder width. This will be your starting position.\nWhile keeping your back straight and your head up, bend only at the waist to the right as far as possible. Breathe in as you bend to the side. Then hold for a second and come back up to the starting position as you exhale. Tip: Keep the rest of the body stationary.\nNow repeat the movement but bending to the left instead. Hold for a second and come back to the starting position.\nRepeat for the recommended amount of repetitions and then change hands."
         },
         {
-            "name": "Kneeling Cable Crunch With Alternating Oblique Twists",
+            "name": "Abdominales con Polea (Alternando Oblícuos)",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Kneeling_Cable_Crunch_With_Alternating_Oblique_Twists/0.jpg",
             "category": "strength",
