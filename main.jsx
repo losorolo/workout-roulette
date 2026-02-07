@@ -30,7 +30,7 @@ const Icon = ({ name, className = "", ...props }) => {
 const Button = ({ className = "", variant = "default", size = "default", onClick, children, disabled, ...props }) => {
     let base = "inline-flex items-center justify-center whitespace-nowrap rounded font-bold uppercase tracking-wide text-sm transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
     let variants = {
-        default: "bg-primary-500 text-black hover:bg-primary-400 shadow-[0_0_20px_rgba(var(--primary),0.3)] hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] active:scale-[0.98]",
+        default: "bg-primary-500 text-black shadow-[16px_16px_16px_rgb(var(--primary)/0.2),-16px_-16px_16px_rgb(var(--primary)/0.4)] hover:shadow-[20px_20px_20px_rgb(var(--primary)/0.3),-20px_-20px_20px_rgb(var(--primary)/0.5)] active:scale-[0.98]",
         outline: "border-2 border-slate-700 bg-transparent hover:bg-slate-800 text-slate-300 hover:text-white hover:border-slate-500",
         ghost: "hover:bg-white/10 hover:text-white text-slate-400",
         secondary: "bg-black-700 text-white hover:bg-black-600 border border-white/5"
@@ -186,6 +186,7 @@ const GymRoutineApp = () => {
     const [exercisesDb, setExercisesDb] = useState({});
     const [weights, setWeights] = useState({});
     const [completedToday, setCompletedToday] = useState({});
+    const [expandedExercises, setExpandedExercises] = useState({});
 
     // Config: { [dayName]: { isRest: boolean, muscles: string[] } }
     const [settings, setSettings] = useState(() => {
@@ -269,29 +270,54 @@ const GymRoutineApp = () => {
 
         setTimeout(() => {
             const newRoutine = [];
-            todayConfig.muscles.forEach(muscle => {
-                const candidates = exercisesDb[muscle] || [];
-                if (candidates.length === 0) return;
+            const selectedMuscles = todayConfig.muscles;
+            if (selectedMuscles.length === 0) return;
 
-                // Weighted logic similar to original
-                let pool = [...candidates];
-                // Select 2 exercises per muscle
-                for (let i = 0; i < 2; i++) {
-                    if (pool.length === 0) break;
-                    const weightedPool = pool.map(ex => ({ ex, prob: 1 / ((weights[ex.name] || 0) + 1) }));
-                    const totalWeight = weightedPool.reduce((sum, item) => sum + item.prob, 0);
-                    let r = Math.random() * totalWeight;
-                    let winner = weightedPool[0].ex;
-                    for (const item of weightedPool) {
-                        r -= item.prob;
-                        if (r <= 0) { winner = item.ex; break; }
-                    }
-                    newRoutine.push({ ...winner, muscle, id: `${muscle}-${i}-${Date.now()}` });
-                    pool = pool.filter(x => x.name !== winner.name);
-                }
+            // Determine total number of exercises for this session (5 to 8)
+            const targetTotal = Math.floor(Math.random() * 4) + 5; // 5, 6, 7, or 8
+
+            // Collect all possible candidates
+            let totalCandidates = [];
+            selectedMuscles.forEach(muscle => {
+                const candidates = exercisesDb[muscle] || [];
+                candidates.forEach(ex => totalCandidates.push({ ...ex, muscle }));
             });
+
+            if (totalCandidates.length === 0) {
+                setIsSpinning(false);
+                return;
+            }
+
+            // Pick exercises until we reach target or run out of candidates
+            let pool = [...totalCandidates];
+            while (newRoutine.length < targetTotal && pool.length > 0) {
+                // Weighted selection based on weights
+                const weightedPool = pool.map(item => ({
+                    item,
+                    prob: 1 / ((weights[item.name] || 0) + 1)
+                }));
+                const totalWeight = weightedPool.reduce((sum, p) => sum + p.prob, 0);
+                let r = Math.random() * totalWeight;
+                let winnerIdx = 0;
+                for (let i = 0; i < weightedPool.length; i++) {
+                    r -= weightedPool[i].prob;
+                    if (r <= 0) {
+                        winnerIdx = i;
+                        break;
+                    }
+                }
+
+                const winner = pool[winnerIdx];
+                newRoutine.push({ ...winner, id: `${winner.muscle}-${newRoutine.length}-${Date.now()}` });
+                pool.splice(winnerIdx, 1);
+            }
+
             setDailyRoutine(newRoutine);
             setIsSpinning(false);
+            // Auto expand first exercise
+            if (newRoutine.length > 0) {
+                setExpandedExercises({ [newRoutine[0].id]: true });
+            }
         }, 1500);
     };
 
@@ -346,9 +372,9 @@ const GymRoutineApp = () => {
                     <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6 animate-pulse">
                         <Icon name="Dumbbell" className="w-10 h-10 text-slate-600" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Listo para machacar?</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Listo para entrenar?</h3>
                     <p className="text-slate-500 mb-6 max-w-xs">Genera tu rutina del día basada en tu configuración.</p>
-                    <Button onClick={generateRoutine} size="lg" className="shadow-2xl shadow-primary-500/20">
+                    <Button onClick={generateRoutine} size="lg" className="shadow-xl shadow-primary-500/10">
                         INICIAR RUTINA <Icon name="PlayCircle" className="ml-2 w-5 h-5" />
                     </Button>
                 </div>
@@ -374,68 +400,82 @@ const GymRoutineApp = () => {
                         </div>
                     ) : (
                         <div className="grid gap-6">
-                            {dailyRoutine.map((ex, idx) => (
-                                <div key={ex.id} className="relative overflow-hidden rounded-xl bg-black-800 border-l-4 border-l-primary-500 border-y border-r border-y-black-700 border-r-black-700 shadow-2xl group">
-                                    {/* Content */}
-                                    <div className="flex flex-col md:flex-row">
-                                        {/* Video Section */}
-                                        <div className="w-full md:w-5/12 h-56 md:h-auto bg-black-900 overflow-hidden relative border-b md:border-b-0 md:border-r border-white/5">
-                                            <div className="absolute top-2 left-2 z-10 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-md uppercase tracking-wide">
-                                                {ex.muscle}
-                                            </div>
-                                            <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
-                                        </div>
+                            {dailyRoutine.map((ex, idx) => {
+                                const isExpanded = expandedExercises[ex.id];
+                                return (
+                                    <div key={ex.id} className="relative overflow-hidden rounded-xl bg-black-800 border-l-4 border-l-primary-500 border-y border-r border-y-black-700 border-r-black-700 shadow-2xl group transition-all duration-300">
+                                        {/* Content */}
+                                        <div className="flex flex-col">
+                                            {/* Info Section - Clickable to expand */}
+                                            <div
+                                                className="flex-1 p-5 flex flex-col justify-between relative border-b border-white/5 cursor-pointer hover:bg-white/5 transition-colors"
+                                                onClick={() => setExpandedExercises(prev => ({ ...prev, [ex.id]: !prev[ex.id] }))}
+                                            >
+                                                {/* Background number */}
+                                                <div className="absolute right-2 top-2 text-6xl font-black text-white/5 select-none pointer-events-none italic">
+                                                    {idx + 1}
+                                                </div>
 
-                                        {/* Info Section */}
-                                        <div className="flex-1 p-5 flex flex-col justify-between relative">
-                                            {/* Background number */}
-                                            <div className="absolute right-2 top-2 text-6xl font-black text-white/5 select-none pointer-events-none italic">
-                                                {idx + 1}
-                                            </div>
+                                                <div className="space-y-2 pr-12">
+                                                    <div className="flex items-center gap-2 mb-1">
+                                                        <span className="text-[10px] font-bold text-primary-500 uppercase tracking-widest">{ex.muscle}</span>
+                                                        {isExpanded ? (
+                                                            <Icon name="ChevronUp" className="w-3 h-3 text-slate-500" />
+                                                        ) : (
+                                                            <Icon name="ChevronDown" className="w-3 h-3 text-slate-500" />
+                                                        )}
+                                                    </div>
+                                                    <h3 className={`text-xl font-black uppercase leading-tight ${completedToday[ex.id] ? 'text-emerald-500 decoration-emerald-500/50' : 'text-white'}`}>
+                                                        {ex.name}
+                                                    </h3>
+                                                    <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
+                                                        <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Series: 4</span>
+                                                        <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Reps: 8-12</span>
+                                                    </div>
+                                                </div>
 
-                                            <div className="space-y-2 pr-12">
-                                                <h3 className={`text-xl font-black uppercase leading-tight ${completedToday[ex.id] ? 'text-emerald-500 decoration-emerald-500/50' : 'text-white'}`}>
-                                                    {ex.name}
-                                                </h3>
-                                                <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
-                                                    <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Series: 4</span>
-                                                    <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Reps: 8-12</span>
+                                                <div className="mt-6 flex items-center justify-between">
+                                                    <div className="text-[10px] text-slate-500 font-mono">
+                                                        Historia: {completionStats[ex.name] || 0} completados
+                                                    </div>
+
+                                                    <button
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const isDone = completedToday[ex.id];
+                                                            setCompletedToday(prev => {
+                                                                const n = { ...prev };
+                                                                if (isDone) delete n[ex.id]; else n[ex.id] = true;
+                                                                return n;
+                                                            });
+                                                            setCompletionStats(prev => ({
+                                                                ...prev,
+                                                                [ex.name]: Math.max(0, (prev[ex.name] || 0) + (isDone ? -1 : 1))
+                                                            }));
+                                                            const cw = weights[ex.name] || 0;
+                                                            setWeights({ ...weights, [ex.name]: isDone ? Math.max(0, cw - 1) : cw + 1 });
+                                                        }}
+                                                        className={`w-9 h-9 rounded-full flex items-center justify-center transition-all group/btn ${completedToday[ex.id] ? 'bg-emerald-500 text-black shadow-[0_0_15px_rgba(16,185,129,0.4)]' : 'bg-white/5 text-white hover:bg-white/10 border-2 border-white/10'}`}
+                                                    >
+                                                        {completedToday[ex.id] ? (
+                                                            <Icon name="Check" className="w-5 h-5 stroke-[4]" />
+                                                        ) : (
+                                                            <div className="w-4 h-4 border-2 border-slate-500 rounded-sm transition-colors group-hover/btn:border-orange-500 group-hover/btn:bg-orange-500/20" />
+                                                        )}
+                                                    </button>
                                                 </div>
                                             </div>
 
-                                            <div className="mt-6 flex items-center justify-between">
-                                                <div className="text-[10px] text-slate-500 font-mono">
-                                                    Historia: {completionStats[ex.name] || 0} completados
+                                            {/* Video Section - Expandable */}
+                                            {isExpanded && (
+                                                <div className="w-full h-64 bg-black-900 overflow-hidden relative animate-in slide-in-from-top-2 duration-300">
+                                                    <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
                                                 </div>
-
-                                                <button
-                                                    onClick={() => {
-                                                        const isDone = completedToday[ex.id];
-                                                        setCompletedToday(prev => {
-                                                            const n = { ...prev };
-                                                            if (isDone) delete n[ex.id]; else n[ex.id] = true;
-                                                            return n;
-                                                        });
-                                                        setCompletionStats(prev => ({
-                                                            ...prev,
-                                                            [ex.name]: Math.max(0, (prev[ex.name] || 0) + (isDone ? -1 : 1))
-                                                        }));
-                                                        const cw = weights[ex.name] || 0;
-                                                        setWeights({ ...weights, [ex.name]: isDone ? Math.max(0, cw - 1) : cw + 1 });
-                                                    }}
-                                                    className={`h-12 px-6 rounded flex items-center gap-2 font-bold uppercase text-xs tracking-wider transition-all ${completedToday[ex.id] ? 'bg-emerald-500 text-black shadow-[0_0_15px_rgba(16,185,129,0.4)]' : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'}`}
-                                                >
-                                                    {completedToday[ex.id] ? (
-                                                        <>Done <Icon name="CheckCircle2" className="w-4 h-4 ml-1" /></>
-                                                    ) : (
-                                                        <>Marcar <div className="w-2 h-2 bg-primary-500 rounded-full ml-2 animate-pulse" /></>
-                                                    )}
-                                                </button>
-                                            </div>
+                                            )}
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     )}
                 </div>
@@ -539,9 +579,9 @@ const GymRoutineApp = () => {
             </div>
 
             <div className="space-y-2">
-                <h2 className="text-3xl font-black uppercase italic tracking-tighter">Club de Soporte</h2>
+                <h2 className="text-3xl font-black uppercase italic tracking-tighter">Donaciones</h2>
                 <p className="text-slate-400 max-w-xs mx-auto text-sm font-medium">
-                    Ayúdame a mantener la app gratuita y sin anuncios.
+                    Ayuda a mantener la app gratuita y sin anuncios.
                 </p>
             </div>
 
@@ -640,13 +680,13 @@ const GymRoutineApp = () => {
                     <h1 className="text-3xl font-black italic tracking-tighter uppercase leading-none">
                         Workout<span className="text-primary-500">Roulette</span>
                     </h1>
-                    <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">Ultimate Fitness App</span>
+                    <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">Fitness App</span>
                 </div>
                 {/* Mobile settings toggle shortcut could go here */}
             </header>
 
             {/* Main Content Area */}
-            <main className="pt-24 pb-32 px-4 w-full md:max-w-4xl mx-auto min-h-screen">
+            <main className="pt-24 pb-32 px-4 max-w-md md:max-w-4xl mx-auto min-h-screen">
                 {activeTab === 'routine' && <RoutineView />}
                 {activeTab === 'setup' && <SetupView />}
                 {activeTab === 'appearance' && <AppearanceView />}
@@ -688,7 +728,7 @@ const GymRoutineApp = () => {
 
                     {/* Center Action Button - Hexagon/Diamond shape hint or just clean circle */}
                     <div className="relative -top-6 mx-2">
-                        <div className="absolute inset-0 bg-primary-500 blur-2xl opacity-30 rounded-full animate-pulse"></div>
+                        <div className="absolute inset-0 bg-primary-500 blur-xl opacity-20 rounded-full animate-pulse"></div>
                         <button
                             onClick={() => {
                                 if (activeTab === 'routine') {
@@ -698,11 +738,9 @@ const GymRoutineApp = () => {
                                     if (dailyRoutine.length === 0) generateRoutine();
                                 }
                             }}
-                            className="relative w-16 h-16 bg-primary-500 text-black hover:bg-primary-400 active:scale-95 transition-all shadow-xl shadow-primary-500/20 rounded-2xl rotate-45 flex items-center justify-center border-4 border-black-900 z-10 group"
+                            className="relative w-16 h-16 bg-primary-500 text-black hover:bg-primary-400 active:scale-95 transition-all shadow-xl shadow-primary-500/20 rounded-full flex items-center justify-center border-4 border-black-900 z-10 group"
                         >
-                            <div className="-rotate-45">
-                                <Icon name={isSpinning ? "Dice5" : "Dumbbell"} className={`w-8 h-8 ${isSpinning ? 'animate-spin' : 'group-hover:scale-110 transition-transform'}`} strokeWidth={2.5} />
-                            </div>
+                            <Icon name={isSpinning ? "Dice5" : "Dumbbell"} className={`w-8 h-8 ${isSpinning ? 'animate-spin' : 'group-hover:scale-110 transition-transform'}`} strokeWidth={2.5} />
                         </button>
                     </div>
 
@@ -717,7 +755,7 @@ const GymRoutineApp = () => {
                         <div className={`p-1.5 rounded-lg transition-all ${activeTab === 'donations' ? 'bg-primary-500/10' : 'group-hover:bg-white/5'}`}>
                             <Icon name="DollarSign" className="w-5 h-5" />
                         </div>
-                        <span className="text-[9px] font-bold uppercase tracking-wide">Club</span>
+                        <span className="text-[9px] font-bold uppercase tracking-wide">Donaciones</span>
                     </button>
                 </div>
             </nav>
