@@ -28,18 +28,18 @@ const Icon = ({ name, className = "", ...props }) => {
 
 // --- Helper Components ---
 const Button = ({ className = "", variant = "default", size = "default", onClick, children, disabled, ...props }) => {
-    let base = "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
+    let base = "inline-flex items-center justify-center whitespace-nowrap rounded font-bold uppercase tracking-wide text-sm transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
     let variants = {
-        default: "bg-primary-600 text-white hover:bg-primary-500 shadow active:scale-95 transition-all duration-200",
-        outline: "border border-slate-700 bg-transparent hover:bg-slate-800 text-primary-400",
-        ghost: "hover:bg-slate-800 hover:text-primary-400",
-        secondary: "bg-slate-800 text-slate-50 hover:bg-slate-700"
+        default: "bg-primary-500 text-black hover:bg-primary-400 shadow-[0_0_20px_rgba(var(--primary),0.3)] hover:shadow-[0_0_30px_rgba(var(--primary),0.5)] active:scale-[0.98]",
+        outline: "border-2 border-slate-700 bg-transparent hover:bg-slate-800 text-slate-300 hover:text-white hover:border-slate-500",
+        ghost: "hover:bg-white/10 hover:text-white text-slate-400",
+        secondary: "bg-black-700 text-white hover:bg-black-600 border border-white/5"
     };
     let sizes = {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-12 rounded-md px-8",
-        icon: "h-9 w-9",
+        default: "h-12 px-6 py-2", // Taller, more substantial
+        sm: "h-9 rounded px-3 text-xs",
+        lg: "h-14 rounded-lg px-8 text-base",
+        icon: "h-10 w-10",
     };
     return (
         <button
@@ -83,7 +83,7 @@ const ExerciseImage = ({ name, gif, videoId }) => {
     const [error, setError] = useState(false);
     if (videoId) {
         const baseUrl = `https://www.youtube.com/embed/${videoId}`;
-        const finalUrl = baseUrl.includes('?') ? `${baseUrl}&rel=0&modestbranding=1` : `${baseUrl}?rel=0&modestbranding=1`;
+        const finalUrl = baseUrl.includes('?') ? `${baseUrl}&rel=0&modestbranding=1&mute=1` : `${baseUrl}?rel=0&modestbranding=1&mute=1`;
         return (
             <div className="w-full h-full bg-slate-950 flex flex-col items-center justify-center overflow-hidden relative group/video">
                 <iframe width="100%" height="100%" src={finalUrl} title={name} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className="absolute inset-0 w-full h-full"></iframe>
@@ -119,56 +119,60 @@ const MUSCLE_GROUPS_ES = [
 ];
 
 // --- Theme Config ---
+// --- Theme Config ---
 const THEMES = {
+    // Replaced Cyan with a more "Neon Blue" look to match the dark aesthetic
     cyan: {
-        name: 'Neon Cyan',
-        primary: '6 182 212', // Cyan 500
+        name: 'Electric Blue',
+        primary: '0 255 255', // Pure Cyan
         vars: {
-            '--primary': '6 182 212',
-            '--primary-50': '236 254 255',
-            '--primary-100': '207 250 254',
-            '--primary-200': '165 243 252',
-            '--primary-300': '103 232 249',
-            '--primary-400': '34 211 238',
-            '--primary-500': '6 182 212',
-            '--primary-600': '8 145 178',
-            '--primary-700': '14 116 144',
-            '--primary-800': '21 94 117',
-            '--primary-900': '22 78 99',
+            '--primary': '0 255 255',
+            '--primary-50': '224 255 255',
+            '--primary-100': '179 255 255',
+            '--primary-200': '128 255 255',
+            '--primary-300': '77 255 255',
+            '--primary-400': '26 255 255',
+            '--primary-500': '0 255 255', // High Viz
+            '--primary-600': '0 204 204',
+            '--primary-700': '0 153 153',
+            '--primary-800': '0 102 102',
+            '--primary-900': '0 51 51',
         }
     },
+    // Updated Orange to be the default "Gym Brand" orange from the reference
     orange: {
-        name: 'Inferno Orange',
-        primary: '249 115 22', // Orange 500
+        name: 'High Voltage Orange',
+        primary: '255 87 34', // Deep Orange
         vars: {
-            '--primary': '249 115 22',
-            '--primary-50': '255 247 237',
-            '--primary-100': '255 237 213',
-            '--primary-200': '254 215 170',
-            '--primary-300': '253 186 116',
-            '--primary-400': '251 146 60',
-            '--primary-500': '249 115 22',
-            '--primary-600': '234 88 12',
-            '--primary-700': '194 65 12',
-            '--primary-800': '154 52 18',
-            '--primary-900': '124 45 18',
+            '--primary': '255 87 34',
+            '--primary-50': '255 243 224',
+            '--primary-100': '255 224 178',
+            '--primary-200': '255 204 128',
+            '--primary-300': '255 183 77',
+            '--primary-400': '255 167 38',
+            '--primary-500': '255 87 34', // The reference color
+            '--primary-600': '244 81 30',
+            '--primary-700': '230 74 25',
+            '--primary-800': '216 67 21',
+            '--primary-900': '191 54 12',
         }
     },
+    // Updated Purple to a Neon Purple
     purple: {
-        name: 'Galaxy Purple',
-        primary: '168 85 247', // Purple 500
+        name: 'Cyber Purple',
+        primary: '213 0 249', // Purple A400
         vars: {
-            '--primary': '168 85 247',
-            '--primary-50': '250 245 255',
-            '--primary-100': '243 232 255',
-            '--primary-200': '233 213 255',
-            '--primary-300': '216 180 254',
-            '--primary-400': '192 132 252',
-            '--primary-500': '168 85 247',
-            '--primary-600': '147 51 234',
-            '--primary-700': '126 34 206',
-            '--primary-800': '107 33 168',
-            '--primary-900': '88 28 135',
+            '--primary': '213 0 249',
+            '--primary-50': '250 227 254',
+            '--primary-100': '243 186 253',
+            '--primary-200': '232 128 252',
+            '--primary-300': '223 83 250',
+            '--primary-400': '213 0 249', // Neon
+            '--primary-500': '196 0 231',
+            '--primary-600': '170 0 200',
+            '--primary-700': '138 0 163',
+            '--primary-800': '111 0 131',
+            '--primary-900': '74 20 140', // Deep purple
         }
     }
 };
@@ -176,7 +180,8 @@ const THEMES = {
 // --- Application Settings ---
 const GymRoutineApp = () => {
     // 1. Data States
-    const [theme, setTheme] = useState(() => localStorage.getItem('gym_theme') || 'cyan');
+    // Default to 'orange' as it matches the requested style best
+    const [theme, setTheme] = useState(() => localStorage.getItem('gym_theme') || 'orange');
     const [activeTab, setActiveTab] = useState('routine');
     const [exercisesDb, setExercisesDb] = useState({});
     const [weights, setWeights] = useState({});
@@ -313,33 +318,46 @@ const GymRoutineApp = () => {
     // --- View Components ---
 
     const RoutineView = () => (
-        <div className="space-y-4 pb-24 animate-in fade-in zoom-in-95 duration-300">
-            <div className="flex items-center justify-between mb-2">
+        <div className="space-y-6 pb-24 animate-in fade-in zoom-in-95 duration-300">
+            <div className="flex items-end justify-between border-b border-white/10 pb-4">
                 <div>
-                    <h2 className="text-2xl font-bold text-white">Rutina</h2>
-                    <p className="text-slate-400 capitalize">{currentDayName} • {todayConfig.isRest ? 'Descanso' : 'Entrenamiento'}</p>
+                    <span className="text-primary-500 text-xs font-bold tracking-[0.2em] uppercase mb-1 block">Tu Entrenamiento</span>
+                    <h2 className="text-4xl font-black text-white italic tracking-tighter uppercase leading-none">
+                        {todayConfig.isRest ? 'Día Libre' : currentDayName}
+                    </h2>
                 </div>
+                {!todayConfig.isRest && dailyRoutine.length > 0 && (
+                    <div className="text-right">
+                        <p className="text-xs text-slate-400 font-mono">{dailyRoutine.length} EJERCICIOS</p>
+                    </div>
+                )}
             </div>
 
             {todayConfig.isRest ? (
-                <div className="flex flex-col items-center justify-center p-10 mt-10 text-center border-2 border-dashed border-slate-800 rounded-3xl bg-slate-900/50">
-                    <div className="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center mb-4">
-                        <Icon name="Moon" className="w-10 h-10 text-emerald-500" />
+                <div className="flex flex-col items-center justify-center p-12 mt-4 text-center border border-dashed border-white/10 rounded-3xl bg-black-800/50">
+                    <div className="w-24 h-24 bg-emerald-500/10 rounded-full flex items-center justify-center mb-6 ring-1 ring-emerald-500/30">
+                        <Icon name="Moon" className="w-12 h-12 text-emerald-500" />
                     </div>
-                    <h3 className="text-xl font-bold text-emerald-400">¡Día de Descanso!</h3>
-                    <p className="text-slate-500 mt-2">La recuperación es clave para el progreso.</p>
+                    <h3 className="text-2xl font-black text-white uppercase italic">Modo Recuperación</h3>
+                    <p className="text-slate-400 mt-2 max-w-xs text-sm">El músculo crece cuando descansas. Tómate el día libre.</p>
                 </div>
             ) : dailyRoutine.length === 0 ? (
-                <div className="text-center py-20">
-                    <p className="text-slate-500">No hay rutina generada aún.</p>
-                    <Button onClick={generateRoutine} className="mt-4">Generar Ahora</Button>
+                <div className="text-center py-20 flex flex-col items-center">
+                    <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6 animate-pulse">
+                        <Icon name="Dumbbell" className="w-10 h-10 text-slate-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2">Listo para machacar?</h3>
+                    <p className="text-slate-500 mb-6 max-w-xs">Genera tu rutina del día basada en tu configuración.</p>
+                    <Button onClick={generateRoutine} size="lg" className="shadow-2xl shadow-primary-500/20">
+                        INICIAR RUTINA <Icon name="PlayCircle" className="ml-2 w-5 h-5" />
+                    </Button>
                 </div>
             ) : (
-                <div className="space-y-4">
-                    {/* Muscle Chips Summary */}
+                <div className="space-y-6">
+                    {/* Muscle Chips Summary - Modern Chips */}
                     <div className="flex flex-wrap gap-2">
                         {todayConfig.muscles.map(m => (
-                            <span key={m} className="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-300">
+                            <span key={m} className="px-4 py-1.5 rounded bg-black-700 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-slate-300">
                                 {m}
                             </span>
                         ))}
@@ -347,29 +365,49 @@ const GymRoutineApp = () => {
 
                     {/* Exercise List */}
                     {isSpinning ? (
-                        <div className="flex flex-col items-center justify-center py-20 space-y-6">
+                        <div className="flex flex-col items-center justify-center py-24 space-y-8">
                             <div className="relative">
-                                <div className="absolute inset-0 bg-primary-500 blur-2xl opacity-20 animate-pulse"></div>
-                                <Icon name="RefreshCw" className="w-16 h-16 text-primary-500 animate-spin-slow" />
+                                <div className="absolute inset-0 bg-primary-500 blur-3xl opacity-20 animate-pulse"></div>
+                                <Icon name="RefreshCw" className="w-20 h-20 text-primary-500 animate-spin-slow" strokeWidth={1.5} />
                             </div>
-                            <p className="text-primary-400 font-mono tracking-widest animate-pulse">GENERANDO...</p>
+                            <p className="text-white text-lg font-black tracking-[0.3em] uppercase animate-pulse">Seleccionando...</p>
                         </div>
                     ) : (
-                        <div className="grid gap-4">
+                        <div className="grid gap-6">
                             {dailyRoutine.map((ex, idx) => (
-                                <div key={ex.id} className="relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-800 shadow-xl group">
-                                    {/* Glassy Effect */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                                <div key={ex.id} className="relative overflow-hidden rounded-xl bg-black-800 border-l-4 border-l-primary-500 border-y border-r border-y-black-700 border-r-black-700 shadow-2xl group">
+                                    {/* Content */}
+                                    <div className="flex flex-col md:flex-row">
+                                        {/* Video Section */}
+                                        <div className="w-full md:w-5/12 h-56 md:h-auto bg-black-900 overflow-hidden relative border-b md:border-b-0 md:border-r border-white/5">
+                                            <div className="absolute top-2 left-2 z-10 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded backdrop-blur-md uppercase tracking-wide">
+                                                {ex.muscle}
+                                            </div>
+                                            <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
+                                        </div>
 
-                                    <div className="p-4 flex gap-4">
-                                        <div className="flex-1 space-y-3 pb-2">
-                                            <div className="flex items-start justify-between gap-4">
-                                                <div>
-                                                    <h3 className={`text-lg font-bold leading-tight ${completedToday[ex.id] ? 'text-emerald-400 line-through decoration-emerald-500/50' : 'text-slate-100'}`}>
-                                                        {ex.name}
-                                                    </h3>
-                                                    <p className="text-xs text-primary-400 font-bold uppercase tracking-wide mt-1">{ex.muscle}</p>
+                                        {/* Info Section */}
+                                        <div className="flex-1 p-5 flex flex-col justify-between relative">
+                                            {/* Background number */}
+                                            <div className="absolute right-2 top-2 text-6xl font-black text-white/5 select-none pointer-events-none italic">
+                                                {idx + 1}
+                                            </div>
+
+                                            <div className="space-y-2 pr-12">
+                                                <h3 className={`text-xl font-black uppercase leading-tight ${completedToday[ex.id] ? 'text-emerald-500 decoration-emerald-500/50' : 'text-white'}`}>
+                                                    {ex.name}
+                                                </h3>
+                                                <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
+                                                    <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Series: 4</span>
+                                                    <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Reps: 8-12</span>
                                                 </div>
+                                            </div>
+
+                                            <div className="mt-6 flex items-center justify-between">
+                                                <div className="text-[10px] text-slate-500 font-mono">
+                                                    Historia: {completionStats[ex.name] || 0} completados
+                                                </div>
+
                                                 <button
                                                     onClick={() => {
                                                         const isDone = completedToday[ex.id];
@@ -378,34 +416,22 @@ const GymRoutineApp = () => {
                                                             if (isDone) delete n[ex.id]; else n[ex.id] = true;
                                                             return n;
                                                         });
-
-                                                        // Update stats
                                                         setCompletionStats(prev => ({
                                                             ...prev,
                                                             [ex.name]: Math.max(0, (prev[ex.name] || 0) + (isDone ? -1 : 1))
                                                         }));
-
-                                                        // Update weights (probability)
                                                         const cw = weights[ex.name] || 0;
                                                         setWeights({ ...weights, [ex.name]: isDone ? Math.max(0, cw - 1) : cw + 1 });
                                                     }}
-                                                    className={`w-10 h-10 shrink-0 rounded-full flex items-center justify-center border transition-all duration-300 ${completedToday[ex.id] ? 'bg-emerald-500 border-emerald-500 text-white shadow-lg shadow-emerald-500/20' : 'border-slate-600 text-slate-500 hover:border-primary-500 hover:text-primary-500 hover:bg-slate-800'}`}
+                                                    className={`h-12 px-6 rounded flex items-center gap-2 font-bold uppercase text-xs tracking-wider transition-all ${completedToday[ex.id] ? 'bg-emerald-500 text-black shadow-[0_0_15px_rgba(16,185,129,0.4)]' : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'}`}
                                                 >
-                                                    {completedToday[ex.id] ? <Icon name="Check" className="w-5 h-5" /> : <div className="w-3 h-3 rounded-sm bg-current opacity-50" />}
+                                                    {completedToday[ex.id] ? (
+                                                        <>Done <Icon name="CheckCircle2" className="w-4 h-4 ml-1" /></>
+                                                    ) : (
+                                                        <>Marcar <div className="w-2 h-2 bg-primary-500 rounded-full ml-2 animate-pulse" /></>
+                                                    )}
                                                 </button>
                                             </div>
-
-                                            {/* Media */}
-                                            <div className="w-full h-48 rounded-xl bg-slate-950 overflow-hidden border border-slate-800 relative z-10 shadow-inner">
-                                                <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
-                                            </div>
-
-
-                                            <p className="text-[10px] text-slate-500 text-center font-medium opacity-60">
-                                                Veces realizadas este ejercicio: {completionStats[ex.name] || 0}
-                                            </p>
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -418,72 +444,81 @@ const GymRoutineApp = () => {
     );
 
     const SetupView = () => (
-        <div className="space-y-4 pb-24 animate-in fade-in slide-in-from-bottom-4 duration-300">
-            <div className="mb-6">
-                <h2 className="text-2xl font-bold text-white">Configuración</h2>
-                <p className="text-slate-400 text-sm">Organiza tu semana de entrenamiento.</p>
+        <div className="space-y-6 pb-24 animate-in fade-in slide-in-from-bottom-4 duration-300">
+            <div className="mb-4 border-b border-white/10 pb-4">
+                <span className="text-primary-500 text-xs font-bold tracking-[0.2em] uppercase mb-1 block">Configuración</span>
+                <h2 className="text-3xl font-black text-white italic tracking-tighter uppercase">Plan Semanal</h2>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-4">
                 {DAYS_ES.map(day => {
                     const isExpanded = setupExpandedDay === day;
                     const config = settings[day];
                     const isToday = day === currentDayName;
 
                     return (
-                        <div key={day} className={`rounded-xl border transition-all duration-300 overflow-hidden ${isExpanded ? 'bg-slate-900 border-primary-500/50 shadow-[0_0_20px_rgba(var(--primary),0.1)]' : 'bg-slate-900/50 border-slate-800 hover:border-slate-700'}`}>
+                        <div key={day} className={`rounded border transition-all duration-300 overflow-hidden ${isExpanded ? 'bg-black-800 border-primary-500 ring-1 ring-primary-500/50' : 'bg-black-800/50 border-white/5 hover:bg-black-800 hover:border-white/10'}`}>
                             {/* Header */}
                             <div
-                                className="p-4 flex items-center justify-between cursor-pointer select-none"
+                                className="p-5 flex items-center justify-between cursor-pointer select-none group"
                                 onClick={() => setSetupExpandedDay(isExpanded ? null : day)}
                             >
-                                <div className="flex items-center gap-3">
-                                    <div className={`w-1 h-8 rounded-full ${isToday ? 'bg-primary-500' : 'bg-slate-700'}`}></div>
+                                <div className="flex items-center gap-4">
+                                    <div className={`w-1.5 h-10 rounded-full transition-colors ${isToday ? 'bg-primary-500 shadow-[0_0_15px_rgba(var(--primary),0.6)]' : 'bg-black-600 group-hover:bg-white/20'}`}></div>
                                     <div>
-                                        <div className="flex items-center gap-2">
-                                            <h3 className={`font-semibold ${isToday ? 'text-primary-400' : 'text-slate-200'}`}>{day}</h3>
-                                            {isToday && <span className="text-[10px] bg-primary-500/20 text-primary-300 px-2 rounded-full font-bold">HOY</span>}
+                                        <div className="flex items-center gap-3">
+                                            <h3 className={`font-bold text-lg uppercase tracking-wide ${isToday ? 'text-white' : 'text-slate-400 group-hover:text-slate-200'}`}>{day}</h3>
+                                            {isToday && <span className="text-[9px] bg-primary-500 text-black px-2 py-0.5 rounded font-bold uppercase tracking-widest">Hoy</span>}
                                         </div>
-                                        <p className="text-xs text-slate-500">
-                                            {config.isRest ? 'Descanso' : `${config.muscles.length} músculos`}
+                                        <p className="text-xs text-slate-500 font-medium uppercase tracking-wider mt-0.5">
+                                            {config.isRest ? 'Descanso' : `${config.muscles.length} Grupos Musculares`}
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-3">
-                                    <div onClick={e => e.stopPropagation()}>
+                                <div className="flex items-center gap-4">
+                                    <div onClick={e => e.stopPropagation()} className="flex items-center gap-2">
+                                        <span className={`text-[10px] font-bold uppercase ${config.isRest ? 'text-emerald-500' : 'text-slate-600'}`}>Rest</span>
                                         <Switch
                                             active={config.isRest}
                                             checked={config.isRest}
                                             onCheckedChange={() => toggleRestDay(day)}
-                                            className="scale-90"
+                                            className="data-[state=checked]:bg-emerald-500"
                                         />
                                     </div>
-                                    <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} className="text-slate-500 w-5 h-5" />
+                                    <div className={`p-1 rounded transition-colors ${isExpanded ? 'bg-white/10 text-white' : 'text-slate-600'}`}>
+                                        <Icon name={isExpanded ? "ChevronUp" : "ChevronDown"} className="w-5 h-5" />
+                                    </div>
                                 </div>
                             </div>
 
                             {/* Body */}
                             {isExpanded && (
-                                <div className={`px-4 pb-6 pt-0 animate-in slide-in-from-top-2`}>
-                                    <div className="h-px w-full bg-slate-800 mb-4"></div>
+                                <div className={`px-5 pb-6 pt-2 animate-in slide-in-from-top-2`}>
+
                                     {config.isRest ? (
-                                        <p className="text-center text-sm text-slate-500 italic py-2">Día de descanso activado.</p>
-                                    ) : (
-                                        <div className="grid grid-cols-2 gap-2">
-                                            {MUSCLE_GROUPS_ES.sort((a, b) => a.localeCompare(b, 'es')).map(m => {
-                                                const isSelected = config.muscles.includes(m);
-                                                return (
-                                                    <div
-                                                        key={m}
-                                                        onClick={() => toggleMuscle(day, m)}
-                                                        className={`flex items-center gap-2 p-2 rounded-lg cursor-pointer border transition-all ${isSelected ? 'bg-primary-500/10 border-primary-500/50' : 'bg-slate-950/50 border-slate-800 hover:bg-slate-800'}`}
-                                                    >
-                                                        <Checkbox checked={isSelected} id={`${day}-${m}`} className="pointer-events-none" />
-                                                        <span className={`text-sm ${isSelected ? 'text-primary-200 font-medium' : 'text-slate-400'}`}>{m}</span>
-                                                    </div>
-                                                );
-                                            })}
+                                        <div className="py-8 text-center border-t border-dashed border-white/10">
+                                            <p className="text-sm text-slate-500 uppercase tracking-widest">Día de recuperación asignado</p>
                                         </div>
+                                    ) : (
+                                        <>
+                                            <div className="grid grid-cols-2 gap-2 mt-4 pt-4 border-t border-white/5">
+                                                {MUSCLE_GROUPS_ES.sort((a, b) => a.localeCompare(b, 'es')).map(m => {
+                                                    const isSelected = config.muscles.includes(m);
+                                                    return (
+                                                        <div
+                                                            key={m}
+                                                            onClick={() => toggleMuscle(day, m)}
+                                                            className={`flex items-center gap-3 p-3 rounded cursor-pointer border transition-all ${isSelected ? 'bg-primary-500/10 border-primary-500/50' : 'bg-black-900 border-white/5 hover:border-white/20'}`}
+                                                        >
+                                                            <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${isSelected ? 'bg-primary-500 border-primary-500 text-black' : 'border-slate-600 bg-transparent'}`}>
+                                                                {isSelected && <Icon name="Check" className="w-3.5 h-3.5 stroke-[4]" />}
+                                                            </div>
+                                                            <span className={`text-xs font-bold uppercase tracking-wide ${isSelected ? 'text-primary-100' : 'text-slate-400'}`}>{m}</span>
+                                                        </div>
+                                                    );
+                                                })}
+                                            </div>
+                                        </>
                                     )}
                                 </div>
                             )}
@@ -491,36 +526,35 @@ const GymRoutineApp = () => {
                     );
                 })}
             </div>
-
-            <div className="bg-slate-800/50 rounded-lg p-4 text-xs text-slate-400 border border-slate-800">
-                <p>💡 Los cambios se guardan automáticamente. Ve a la pestaña "Rutina" para generar tu nuevo entrenamiento.</p>
-            </div>
         </div>
     );
 
     const DonationView = () => (
-        <div className="flex flex-col items-center justify-start h-[70vh] text-center space-y-6 animate-in zoom-in-95 pt-8 overflow-y-auto w-full">
-            <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-xl shadow-orange-500/20 shrink-0">
-                <Icon name="DollarSign" className="w-10 h-10 text-white" />
+        <div className="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-8 animate-in zoom-in-95 w-full">
+            <div className="relative">
+                <div className="absolute inset-0 bg-primary-500 blur-3xl opacity-20"></div>
+                <div className="w-24 h-24 bg-gradient-to-br from-black-800 to-black-900 border border-white/10 rounded-2xl flex items-center justify-center shadow-2xl relative z-10 rotate-3 transform transition-transform hover:rotate-6">
+                    <Icon name="DollarSign" className="w-10 h-10 text-primary-500" />
+                </div>
             </div>
 
             <div className="space-y-2">
-                <h2 className="text-2xl font-bold">Apoya el Proyecto</h2>
-                <p className="text-slate-400 max-w-xs mx-auto text-sm">
-                    Ayudame a mantener la app gratuita y sin anuncios.
+                <h2 className="text-3xl font-black uppercase italic tracking-tighter">Club de Soporte</h2>
+                <p className="text-slate-400 max-w-xs mx-auto text-sm font-medium">
+                    Ayúdame a mantener la app gratuita y sin anuncios.
                 </p>
             </div>
 
-            <div className="w-full max-w-xs space-y-3 px-4">
+            <div className="w-full max-w-xs space-y-4 px-4">
                 {/* Monthly Subscription */}
                 <a
                     href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=5b2245aa678b4ae080e7c2196e634c75"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-full p-4 bg-[#009EE3] hover:bg-[#008ED0] text-white rounded-xl font-bold transition-all shadow-lg hover:scale-[1.02] active:scale-95 text-sm"
+                    className="flex items-center gap-4 w-full p-4 bg-[#009EE3] hover:bg-[#008ED0] text-white rounded font-bold uppercase tracking-wide transition-all shadow-[0_0_20px_rgba(0,158,227,0.3)] hover:shadow-[0_0_30px_rgba(0,158,227,0.5)] active:scale-[0.98] text-xs"
                 >
                     <Icon name="CreditCard" className="w-5 h-5" />
-                    <span className="flex-1 text-left">Aporte Mensual (MP)</span>
+                    <span className="flex-1 text-left">Suscripción Mensual (MP)</span>
                 </a>
 
                 {/* One Time Donation */}
@@ -528,7 +562,7 @@ const GymRoutineApp = () => {
                     href="https://link.mercadopago.com.ar/workoutroulette"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-full p-4 bg-[#009EE3]/10 border border-[#009EE3]/50 text-[#009EE3] hover:bg-[#009EE3]/20 rounded-xl font-bold transition-all active:scale-95 text-sm"
+                    className="flex items-center gap-4 w-full p-4 bg-transparent border border-[#009EE3] text-[#009EE3] hover:bg-[#009EE3]/10 rounded font-bold uppercase tracking-wide transition-all active:scale-[0.98] text-xs"
                 >
                     <Icon name="CreditCard" className="w-5 h-5" />
                     <span className="flex-1 text-left">Aporte Único (MP)</span>
@@ -539,24 +573,24 @@ const GymRoutineApp = () => {
                     href="https://www.paypal.com/donate/?business=KWYW8UDUZL7JG&no_recurring=0&item_name=WORKOUT+ROULETTE&currency_code=USD"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-full p-4 bg-[#003087] hover:bg-[#00256A] text-white rounded-xl font-bold transition-all shadow-lg hover:scale-[1.02] active:scale-95 text-sm"
+                    className="flex items-center gap-4 w-full p-4 bg-[#003087] hover:bg-[#00256A] text-white rounded font-bold uppercase tracking-wide transition-all shadow-lg active:scale-[0.98] text-xs"
                 >
                     <Icon name="Globe" className="w-5 h-5" />
                     <span className="flex-1 text-left">PayPal (Internacional)</span>
                 </a>
             </div>
 
-            <p className="text-[10px] text-slate-600 mt-4 leading-relaxed max-w-[200px]">
-                Gracias por tu apoyo. ¡Seguí entrenando duro!
+            <p className="text-[10px] text-slate-600 mt-8 font-mono uppercase tracking-widest opacity-50">
+                Gracias por tu apoyo.
             </p>
         </div>
     );
 
     const AppearanceView = () => (
         <div className="space-y-6 animate-in slide-in-from-right-4">
-            <div className="mb-6">
-                <h2 className="text-2xl font-bold text-white">Apariencia</h2>
-                <p className="text-slate-400 text-sm">Personaliza los colores de la interfaz.</p>
+            <div className="mb-4 border-b border-white/10 pb-4">
+                <span className="text-primary-500 text-xs font-bold tracking-[0.2em] uppercase mb-1 block">Estilo Visual</span>
+                <h2 className="text-3xl font-black text-white italic tracking-tighter uppercase">Tema</h2>
             </div>
 
             <div className="grid grid-cols-1 gap-4">
@@ -564,73 +598,97 @@ const GymRoutineApp = () => {
                     <button
                         key={key}
                         onClick={() => setTheme(key)}
-                        className={`relative p-4 rounded-xl border-2 flex items-center justify-between transition-all group overflow-hidden ${theme === key ? 'border-primary-500 bg-slate-900 shadow-lg' : 'border-slate-800 bg-slate-900/50 hover:border-slate-700'}`}
+                        className={`relative p-5 rounded border-l-4 transition-all group overflow-hidden text-left ${theme === key ? 'bg-black-800 border-l-primary-500 border-y border-r border-y-black-700 border-r-black-700 shadow-xl' : 'bg-black-800/30 border-l-transparent border-y border-r border-y-transparent border-r-transparent hover:bg-black-800 hover:border-l-slate-600'}`}
+                        style={theme === key ? { borderColor: `rgb(${t.primary})` } : {}}
                     >
-                        <div className="flex items-center gap-4 z-10">
-                            <div className="w-12 h-12 rounded-full shadow-inner" style={{ background: `rgb(${t.primary})` }}></div>
-                            <div className="text-left">
-                                <h3 className={`font-bold ${theme === key ? 'text-white' : 'text-slate-300'}`}>{t.name}</h3>
-                                <p className="text-xs text-slate-500">Tema {key}</p>
-                            </div>
-                        </div>
-                        {theme === key && <div className="z-10 bg-primary-500 text-white p-2 rounded-full"><Icon name="Check" /></div>}
+                        {/* Background glow for active */}
+                        {theme === key && <div className="absolute inset-0 bg-primary-500/5 mix-blend-overlay"></div>}
 
-                        {/* Background glow */}
-                        {theme === key && <div className="absolute inset-0 bg-primary-500/10" />}
+                        <div className="flex items-center justify-between relative z-10">
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 rounded bg-black-950 border border-white/10 flex items-center justify-center">
+                                    <div className="w-6 h-6 rounded-full shadow-[0_0_10px_currentColor]" style={{ backgroundColor: `rgb(${t.primary})`, color: `rgb(${t.primary})` }}></div>
+                                </div>
+                                <div>
+                                    <h3 className={`font-black uppercase italic tracking-wide text-lg ${theme === key ? 'text-white' : 'text-slate-400'}`}>{t.name}</h3>
+                                    <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Active Skin</p>
+                                </div>
+                            </div>
+
+                            {theme === key && (
+                                <div className="w-8 h-8 rounded-full bg-primary-500 text-black flex items-center justify-center animate-in zoom-in">
+                                    <Icon name="Check" className="w-5 h-5 stroke-[3]" />
+                                </div>
+                            )}
+                        </div>
                     </button>
                 ))}
+            </div>
+
+            <div className="mt-8 p-6 rounded bg-black-800/50 border border-white/5 text-center">
+                <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">Más temas próximamente</p>
             </div>
         </div>
     );
 
-    // 4. Render Layout
+    // 4. Render Layout - Modern Redesign
     return (
-        <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-primary-500/30">
-            {/* Top Bar - Mobile Only essentially */}
-            <header className="fixed top-0 inset-x-0 z-30 bg-slate-950/80 backdrop-blur-md border-b border-slate-900/50 px-6 h-16 flex items-center justify-center">
-                <h1 className="text-xl font-bold tracking-tight">
-                    <span className="text-white">WORKOUT</span> <span className="text-primary-500">ROULETTE</span>
-                </h1>
+        <div className="min-h-screen bg-black-900 text-white font-sans selection:bg-primary-500/30 selection:text-black">
+            {/* Top Bar - sticky, heavy blur, minimal */}
+            <header className="fixed top-0 inset-x-0 z-30 bg-black-900/80 backdrop-blur-xl border-b border-white/5 px-6 h-20 flex items-center justify-between md:justify-center">
+                <div className="flex flex-col">
+                    <h1 className="text-3xl font-black italic tracking-tighter uppercase leading-none">
+                        Workout<span className="text-primary-500">Roulette</span>
+                    </h1>
+                    <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">Ultimate Fitness App</span>
+                </div>
+                {/* Mobile settings toggle shortcut could go here */}
             </header>
 
             {/* Main Content Area */}
-            <main className="pt-20 pb-32 px-4 w-full md:max-w-4xl mx-auto min-h-screen">
+            <main className="pt-24 pb-32 px-4 w-full md:max-w-4xl mx-auto min-h-screen">
                 {activeTab === 'routine' && <RoutineView />}
                 {activeTab === 'setup' && <SetupView />}
                 {activeTab === 'appearance' && <AppearanceView />}
                 {activeTab === 'donations' && <DonationView />}
+                {/* Settings Tab Content */}
                 {activeTab === 'settings' && (
                     <div className="text-center py-20 text-slate-500">
-                        <Icon name="Settings2" className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                        <p>Configuraciones generales (próximamente)</p>
-                        <Button variant="outline" className="mt-8 text-red-400 hover:text-red-300 border-red-900/30 hover:bg-red-950/30" onClick={() => { if (confirm('¿Borrar todos los datos?')) { localStorage.clear(); window.location.reload(); } }}>
-                            Borrar Datos Locales
+                        <Icon name="Settings2" className="w-16 h-16 mx-auto mb-6 opacity-30" />
+                        <h2 className="text-2xl font-bold text-white mb-2">Ajustes Generales</h2>
+                        <p className="mb-8 max-w-sm mx-auto">Configura tu experiencia de entrenamiento al máximo detalle.</p>
+
+                        <Button variant="outline" className="border-red-500/20 text-red-500 hover:bg-red-500/10 hover:border-red-500/50 w-full max-w-xs" onClick={() => { if (confirm('¿Borrar todos los datos?')) { localStorage.clear(); window.location.reload(); } }}>
+                            ⚠️ Borrar Datos Locales
                         </Button>
                     </div>
                 )}
             </main>
 
-            {/* Floating Bottom Navigation */}
-            <nav className="fixed bottom-6 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-md z-40">
-                <div className="bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl shadow-2xl flex items-center justify-between px-2 py-2 relative">
+            {/* Floating Bottom Navigation - Sleek & Dark */}
+            <nav className="fixed bottom-0 left-0 right-0 z-40 bg-black-800/90 backdrop-blur-lg border-t border-white/5 pb-safe pt-2">
+                <div className="flex items-center justify-around max-w-md mx-auto h-16 px-2 relative">
 
-                    {/* Items Left */}
-                    <button onClick={() => setActiveTab('appearance')} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'appearance' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
-                        <Icon name="Palette" className="w-5 h-5" />
-                        <span className="text-[9px] font-bold uppercase">Apariencia</span>
+                    <button onClick={() => setActiveTab('appearance')} className={`flex-1 flex flex-col items-center justify-center gap-1 transition-all group ${activeTab === 'appearance' ? 'text-primary-500' : 'text-slate-500 hover:text-slate-300'}`}>
+                        <div className={`p-1.5 rounded-lg transition-all ${activeTab === 'appearance' ? 'bg-primary-500/10' : 'group-hover:bg-white/5'}`}>
+                            <Icon name="Palette" className="w-5 h-5" />
+                        </div>
+                        <span className="text-[9px] font-bold uppercase tracking-wide">Estilo</span>
                     </button>
 
                     <button onClick={() => {
                         setActiveTab('routine');
                         if (dailyRoutine.length === 0) generateRoutine();
-                    }} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'routine' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
-                        <Icon name="Calendar" className="w-5 h-5" />
-                        <span className="text-[9px] font-bold uppercase">Rutina</span>
+                    }} className={`flex-1 flex flex-col items-center justify-center gap-1 transition-all group ${activeTab === 'routine' ? 'text-primary-500' : 'text-slate-500 hover:text-slate-300'}`}>
+                        <div className={`p-1.5 rounded-lg transition-all ${activeTab === 'routine' ? 'bg-primary-500/10' : 'group-hover:bg-white/5'}`}>
+                            <Icon name="Calendar" className="w-5 h-5" />
+                        </div>
+                        <span className="text-[9px] font-bold uppercase tracking-wide">Rutina</span>
                     </button>
 
-                    {/* Center Action Button */}
-                    <div className="relative -top-8 mx-2">
-                        <div className="absolute inset-0 bg-primary-500 blur-xl opacity-40 rounded-full animate-pulse"></div>
+                    {/* Center Action Button - Hexagon/Diamond shape hint or just clean circle */}
+                    <div className="relative -top-6 mx-2">
+                        <div className="absolute inset-0 bg-primary-500 blur-2xl opacity-30 rounded-full animate-pulse"></div>
                         <button
                             onClick={() => {
                                 if (activeTab === 'routine') {
@@ -640,21 +698,26 @@ const GymRoutineApp = () => {
                                     if (dailyRoutine.length === 0) generateRoutine();
                                 }
                             }}
-                            className="relative w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white shadow-xl hover:scale-105 active:scale-95 transition-transform border-4 border-slate-950"
+                            className="relative w-16 h-16 bg-primary-500 text-black hover:bg-primary-400 active:scale-95 transition-all shadow-xl shadow-primary-500/20 rounded-2xl rotate-45 flex items-center justify-center border-4 border-black-900 z-10 group"
                         >
-                            <Icon name={isSpinning ? "Dice5" : "Dumbbell"} className={`w-8 h-8 ${isSpinning ? 'animate-spin' : ''}`} />
+                            <div className="-rotate-45">
+                                <Icon name={isSpinning ? "Dice5" : "Dumbbell"} className={`w-8 h-8 ${isSpinning ? 'animate-spin' : 'group-hover:scale-110 transition-transform'}`} strokeWidth={2.5} />
+                            </div>
                         </button>
                     </div>
 
-                    {/* Items Right */}
-                    <button onClick={() => setActiveTab('setup')} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'setup' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
-                        <Icon name="SlidersHorizontal" className="w-5 h-5" />
-                        <span className="text-[9px] font-bold uppercase">Ajustes</span>
+                    <button onClick={() => setActiveTab('setup')} className={`flex-1 flex flex-col items-center justify-center gap-1 transition-all group ${activeTab === 'setup' ? 'text-primary-500' : 'text-slate-500 hover:text-slate-300'}`}>
+                        <div className={`p-1.5 rounded-lg transition-all ${activeTab === 'setup' ? 'bg-primary-500/10' : 'group-hover:bg-white/5'}`}>
+                            <Icon name="SlidersHorizontal" className="w-5 h-5" />
+                        </div>
+                        <span className="text-[9px] font-bold uppercase tracking-wide">Ajustes</span>
                     </button>
 
-                    <button onClick={() => setActiveTab('donations')} className={`p-3 rounded-xl flex flex-col items-center gap-1 transition-all ${activeTab === 'donations' ? 'text-primary-400 bg-primary-500/10' : 'text-slate-500 hover:text-slate-300'}`}>
-                        <Icon name="DollarSign" className="w-5 h-5" />
-                        <span className="text-[9px] font-bold uppercase">Donar</span>
+                    <button onClick={() => setActiveTab('donations')} className={`flex-1 flex flex-col items-center justify-center gap-1 transition-all group ${activeTab === 'donations' ? 'text-primary-500' : 'text-slate-500 hover:text-slate-300'}`}>
+                        <div className={`p-1.5 rounded-lg transition-all ${activeTab === 'donations' ? 'bg-primary-500/10' : 'group-hover:bg-white/5'}`}>
+                            <Icon name="DollarSign" className="w-5 h-5" />
+                        </div>
+                        <span className="text-[9px] font-bold uppercase tracking-wide">Club</span>
                     </button>
                 </div>
             </nav>

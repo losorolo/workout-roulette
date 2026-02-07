@@ -18,7 +18,11 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -26,13 +30,22 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Outfit', 'sans-serif'],
+                        sans: ['"Exo 2"', 'sans-serif'],
+                        heading: ['"Exo 2"', 'sans-serif'],
                     },
                     colors: {
                         slate: {
                             850: '#1f2937',
                             900: '#0f172a',
                             950: '#020617',
+                        },
+                        // Darker blacks for the new theme
+                        black: {
+                            DEFAULT: '#000000',
+                            900: '#050505',
+                            800: '#0a0a0a',
+                            700: '#121212',
+                            600: '#1c1c1c',
                         },
                         primary: {
                             DEFAULT: 'rgb(var(--primary) / <alpha-value>)',
