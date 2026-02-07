@@ -676,14 +676,11 @@ const GymRoutineApp = () => {
     return (
         <div className="min-h-screen bg-black-900 text-white font-sans selection:bg-primary-500/30 selection:text-black">
             {/* Top Bar - sticky, heavy blur, minimal */}
-            <header className="fixed top-0 inset-x-0 z-30 bg-black-900/80 backdrop-blur-xl border-b border-white/5 px-6 h-20 flex items-center justify-between md:justify-center">
-                <div className="flex flex-col">
-                    <h1 className="text-3xl font-black italic tracking-tighter uppercase leading-none">
-                        Workout<span className="text-primary-500">Roulette</span>
-                    </h1>
-                    <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">Fitness App</span>
-                </div>
-                {/* Mobile settings toggle shortcut could go here */}
+            <header className="fixed top-0 inset-x-0 z-30 bg-black-900/80 backdrop-blur-xl border-b border-white/5 px-6 h-20 flex flex-col items-center justify-center">
+                <h1 className="text-2xl font-black italic tracking-tighter uppercase leading-none">
+                    WORKOUT <span className="text-primary-500">ROULETTE</span>
+                </h1>
+                <span className="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase mt-1">Fitness App</span>
             </header>
 
             {/* Main Content Area */}
