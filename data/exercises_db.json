@@ -4261,19 +4261,9 @@
             "name": "Curl de Piernas",
             "muscle": "Isquiotibiales",
             "gif": "",
-            "videoId": "1Tq32sToyks",
+            "videoId": "h16m9nAY2jc",
             "instructions": "",
             "category": "strength",
-            "parent_cat": "Isquiotibiales"
-        },
-        {
-            "name": "Leg Curl",
-            "muscle": "Isquiotibiales",
-            "category": "strength",
-            "video": "1Tq32sToyks",
-            "videoId": "1Tq32sToyks",
-            "gif": "",
-            "instructions": "",
             "parent_cat": "Isquiotibiales"
         },
         {
@@ -5445,7 +5435,7 @@
             "instructions_en": "To begin, first set the bar to a position that best matches your height. Once the bar is loaded, step under it and position it across the back of your shoulders.\nTake the bar with your hands facing forward, unlock it and lift it off the rack by extending your legs.\nMove your feet forward about 18 inches in front of the bar. Position your legs using a shoulder width stance with the toes slightly pointed out. Look forward at all times and maintain a neutral or slightly arched spine. This will be your starting position.\nSlowly lower the bar by bending the knees as you maintain a straight posture with the head up. Continue down until the angle between the upper and lower leg breaks 90 degrees.\nBegin to raise the bar as you exhale by pushing the floor with the heels of your feet, extending the knees and returning to the starting position.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Dumbbell Lunges",
+            "name": "Estocadas con Mancuernas",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Dumbbell_Lunges/0.jpg",
             "category": "strength",
@@ -5702,7 +5692,7 @@
             "instructions_en": "Stand to the side of a barbell next to its center. Bend your knees and lower your body until you are able to reach the barbell.\nGrasp the bar as if you were grabbing a briefcase (palms facing you since the bar is sideways). You may need a wrist wrap if you are using a significant amount of weight. This is your starting position.\nUse your legs to help lift the barbell up while exhaling. Your arms should extend fully as bring the barbell up until you are in a standing position.\nSlowly bring the barbell back down while inhaling. Tip: Make sure to bend your knees while lowering the weight to avoid any injury from occurring.\nRepeat for the recommended amount of repetitions.\nSwitch arms and repeat the movement."
         },
         {
-            "name": "One Leg Barbell Squat",
+            "name": "Sentadilla a una pierna",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/One_Leg_Barbell_Squat/0.jpg",
             "category": "strength",
@@ -6379,16 +6369,6 @@
             "instructions_en": "Wearing either a harness or a loose weight belt, attach the chain to the back so that you will be facing away from the sled. Bend down so that your hands are on the ground. Your back should be flat and knees bent. This is your starting position.\nBegin by driving with legs, alternating left and right. Use your hands to maintain balance and to help pull. Try to keep your back flat as you move over a given distance."
         },
         {
-            "name": "Car Deadlift",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Car_Deadlift/0.jpg",
-            "category": "strongman",
-            "parent_cat": "Cuádriceps",
-            "videoId": "F0x7YVYmbSM",
-            "name_en": "Car Deadlift",
-            "instructions_en": "This event apparatus typically has neutral grip handles, however some have a straight bar that you can approach like a normal deadlift. The apparatus can be loaded with a vehicle or other heavy objects such as tractor tires or kegs.\nCenter yourself between the handles if you are a strong squatter, or back a couple inches if you are a strong deadlifter. You feet should be about hip width apart. Bend at the hip to grip the handles. With your feet and your grip set, take a big breath and then lower your hips and flex the knees.\nLook forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.\nLower the weight by bending at the hips and guiding it to the floor."
-        },
-        {
             "name": "Conan's Wheel",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Conans_Wheel/0.jpg",
@@ -6406,15 +6386,6 @@
             "videoId": "2d2wXoOsq4k",
             "name_en": "Rickshaw Deadlift",
             "instructions_en": "Load the frame with the desired weight. Center yourself between the handles. You feet should be about hip width apart. Bend at the hips to grip the handles, allowing your shoulder blades to protract.\nWith your feet and your grip set, take a big breath and then lower your hips and flex the knees. Look forward with your head, keep your chest up and your back arched, and begin driving through the heels to move the weight upward. As the weight comes up, pull your shoulder blades together as you drive your hips forward.\nLower the weight by bending at the hips and guiding it to the ground."
-        },
-        {
-            "name": "Levantamiento bolsa de arena",
-            "instructions": "",
-            "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Sandbag_Load/0.jpg",
-            "category": "strongman",
-            "parent_cat": "Cuádriceps",
-            "videoId": "mkmgjh_S57A",
-            "instructions_en": "To load sandbags or other objects, begin with the implements placed a distance from the loading platform, typically 50 feet.\nBegin by lifting the sandbag. Sandbags are extremely awkward, and the manner of lifting them can vary depending on the particular sandbag used. Reach as far around it as possible, extending through the hips and knees to pull it up high. Shouldering is usually not allowed.\nMove as quickly as possible to the platform, and load it, extending through your hips, knees, and ankles to get it as high as possible. Place it onto the platform, ensuring it doesn't fall off.\nReturn to the starting position to retrieve the next sandbag, and repeat until the event is completed."
         },
         {
             "name": "Sled Drag - Harness",
@@ -6542,7 +6513,7 @@
             "instructions_en": "Start out by having a barbell in front of you on the floor. Your feet should be wider than shoulder width apart from each other.\nBend the knees and use a pronated grip (palms facing you) to grab the barbell. Your hands should be at a wider than shoulder width apart from each other before lifting. Once you are positioned, lift the barbell up until you can rest it on your chest.\nMove the barbell over and slightly behind your head and make sure your arms are fully extended. Keep your head up at all times and also maintain a straight back. Retract your shoulder blades. This is your starting position.\nSlowly lower the weight by bending your knees until your thighs are parallel to the ground while inhaling. Tip: Keep your back straight while performing this exercise to avoid any injuries and your arms should remain extended and over your head at all times.\nNow use your feet and legs to help bring the weight back up to the starting position while exhaling.\nRepeat for the recommended amount of repetitions."
         },
         {
-            "name": "Power Jerk",
+            "name": "Levantamiento olímpico",
             "instructions": "",
             "gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/Power_Jerk/0.jpg",
             "category": "olympic weightlifting",
