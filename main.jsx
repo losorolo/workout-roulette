@@ -347,10 +347,12 @@ const GymRoutineApp = () => {
         <div className="space-y-6 pb-24 animate-in fade-in zoom-in-95 duration-300">
             <div className="flex items-end justify-between border-b border-white/10 pb-4">
                 <div>
-                    <span className="text-primary-500 text-xs font-bold tracking-[0.2em] uppercase mb-1 block">Tu Entrenamiento</span>
                     <h2 className="text-4xl font-black text-white italic tracking-tighter uppercase leading-none">
-                        {todayConfig.isRest ? 'Día Libre' : currentDayName}
+                        Rutina
                     </h2>
+                    <p className="text-slate-400 text-sm mt-1 uppercase tracking-wider font-medium">
+                        {currentDayName} • Entrenamiento
+                    </p>
                 </div>
                 {!todayConfig.isRest && dailyRoutine.length > 0 && (
                     <div className="text-right">
@@ -403,21 +405,18 @@ const GymRoutineApp = () => {
                             {dailyRoutine.map((ex, idx) => {
                                 const isExpanded = expandedExercises[ex.id];
                                 return (
-                                    <div key={ex.id} className="relative overflow-hidden rounded-xl bg-black-800 border-l-4 border-l-primary-500 border-y border-r border-y-black-700 border-r-black-700 shadow-2xl group transition-all duration-300">
-                                        {/* Content */}
-                                        <div className="flex flex-col">
-                                            {/* Info Section - Clickable to expand */}
+                                    <div key={ex.id} className="relative overflow-hidden rounded-2xl bg-black-800 border border-white/5 shadow-2xl transition-all duration-300">
+                                        <div className="p-4 flex flex-col gap-4">
+                                            {/* Header: Title, Muscle, Button, Nro */}
                                             <div
-                                                className="flex-1 p-5 flex flex-col justify-between relative border-b border-white/5 cursor-pointer hover:bg-white/5 transition-colors"
+                                                className="flex items-start justify-between cursor-pointer group/card-header"
                                                 onClick={() => setExpandedExercises(prev => ({ ...prev, [ex.id]: !prev[ex.id] }))}
                                             >
-                                                {/* Background number */}
-                                                <div className="absolute right-2 top-2 text-6xl font-black text-white/5 select-none pointer-events-none italic">
-                                                    {idx + 1}
-                                                </div>
-
-                                                <div className="space-y-2 pr-12">
-                                                    <div className="flex items-center gap-2 mb-1">
+                                                <div className="space-y-1">
+                                                    <h3 className={`text-xl font-black uppercase leading-tight ${completedToday[ex.id] ? 'text-emerald-500' : 'text-white'}`}>
+                                                        {ex.name}
+                                                    </h3>
+                                                    <div className="flex items-center gap-2">
                                                         <span className="text-[10px] font-bold text-primary-500 uppercase tracking-widest">{ex.muscle}</span>
                                                         {isExpanded ? (
                                                             <Icon name="ChevronUp" className="w-3 h-3 text-slate-500" />
@@ -425,19 +424,13 @@ const GymRoutineApp = () => {
                                                             <Icon name="ChevronDown" className="w-3 h-3 text-slate-500" />
                                                         )}
                                                     </div>
-                                                    <h3 className={`text-xl font-black uppercase leading-tight ${completedToday[ex.id] ? 'text-emerald-500 decoration-emerald-500/50' : 'text-white'}`}>
-                                                        {ex.name}
-                                                    </h3>
-                                                    <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
-                                                        <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Series: 4</span>
-                                                        <span className="bg-white/5 px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Reps: 8-12</span>
-                                                    </div>
                                                 </div>
 
-                                                <div className="mt-6 flex items-center justify-between">
-                                                    <div className="text-[10px] text-slate-500 font-mono">
-                                                        Historia: {completionStats[ex.name] || 0} completados
-                                                    </div>
+                                                <div className="flex items-center gap-3">
+                                                    {/* Compact exercise number */}
+                                                    <span className="text-xl font-black text-white/10 italic select-none">
+                                                        {idx + 1}
+                                                    </span>
 
                                                     <button
                                                         onClick={(e) => {
@@ -466,10 +459,18 @@ const GymRoutineApp = () => {
                                                 </div>
                                             </div>
 
-                                            {/* Video Section - Expandable */}
+                                            {/* Expandable Video & History */}
                                             {isExpanded && (
-                                                <div className="w-full h-64 bg-black-900 overflow-hidden relative animate-in slide-in-from-top-2 duration-300">
-                                                    <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
+                                                <div className="space-y-4 animate-in slide-in-from-top-2 duration-300">
+                                                    <div className="w-full aspect-video bg-black-900 rounded-xl overflow-hidden relative border border-white/5">
+                                                        <ExerciseImage name={ex.name} gif={ex.gif} videoId={ex.videoId} />
+                                                    </div>
+
+                                                    <div className="text-center py-1">
+                                                        <p className="text-[10px] text-slate-500 font-medium uppercase tracking-widest">
+                                                            Veces realizadas este ejercicio: {completionStats[ex.name] || 0}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             )}
                                         </div>
