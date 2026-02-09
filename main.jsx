@@ -30,7 +30,7 @@ const Icon = ({ name, className = "", ...props }) => {
 const Button = ({ className = "", variant = "default", size = "default", onClick, children, disabled, ...props }) => {
     let base = "inline-flex items-center justify-center whitespace-nowrap rounded font-bold uppercase tracking-wide text-sm transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
     let variants = {
-        default: "bg-primary-500 text-black shadow-[16px_16px_16px_rgb(var(--primary)/0.2),-16px_-16px_16px_rgb(var(--primary)/0.4)] hover:shadow-[20px_20px_20px_rgb(var(--primary)/0.3),-20px_-20px_20px_rgb(var(--primary)/0.5)] active:scale-[0.98]",
+        default: "bg-primary-500 text-black shadow-[8px_8px_16px_rgb(var(--primary)/0.2),-8px_-8px_16px_rgb(var(--primary)/0.3)] hover:shadow-[10px_10px_20px_rgb(var(--primary)/0.3),-10px_-10px_20px_rgb(var(--primary)/0.4)] active:scale-[0.98]",
         outline: "border-2 border-slate-700 bg-transparent hover:bg-slate-800 text-slate-300 hover:text-white hover:border-slate-500",
         ghost: "hover:bg-white/10 hover:text-white text-slate-400",
         secondary: "bg-black-700 text-white hover:bg-black-600 border border-white/5"
@@ -344,8 +344,8 @@ const GymRoutineApp = () => {
     // --- View Components ---
 
     const RoutineView = () => (
-        <div className="space-y-6 pb-24 animate-in fade-in zoom-in-95 duration-300">
-            <div className="flex items-end justify-between border-b border-white/10 pb-4">
+        <div className="flex-1 flex flex-col min-h-0 animate-in fade-in zoom-in-95 duration-300">
+            <div className="flex items-end justify-between border-b border-white/10 pb-4 mb-6">
                 <div>
                     <h2 className="text-4xl font-black text-white italic tracking-tighter uppercase leading-none">
                         Rutina
@@ -370,16 +370,20 @@ const GymRoutineApp = () => {
                     <p className="text-slate-400 mt-2 max-w-xs text-sm">El músculo crece cuando descansas. Tómate el día libre.</p>
                 </div>
             ) : dailyRoutine.length === 0 ? (
-                <div className="text-center py-20 flex flex-col items-center">
-                    <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6 animate-pulse">
-                        <Icon name="Dumbbell" className="w-10 h-10 text-slate-600" />
+                <div className="flex flex-col items-center text-center pt-2 pb-12 animate-in fade-in zoom-in-95 duration-500">
+                    <div className="relative mb-8">
+                        <div className="absolute inset-0 bg-primary-500 blur-3xl opacity-30 animate-pulse"></div>
+                        <div className="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center relative z-10 border-4 border-black-900 shadow-[8px_8px_16px_rgb(var(--primary)/0.2),-8px_-8px_16px_rgb(var(--primary)/0.3)]">
+                            <Icon name="Dumbbell" className="w-10 h-10 text-black" strokeWidth={2.5} />
+                        </div>
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Listo para entrenar?</h3>
-                    <p className="text-slate-500 mb-6 max-w-xs">Genera tu rutina del día basada en tu configuración.</p>
-                    <Button onClick={generateRoutine} size="lg" className="shadow-xl shadow-primary-500/10">
+                    <h3 className="text-2xl font-black text-white mb-2 uppercase italic tracking-tighter italic">¿Listo para entrenar?</h3>
+                    <p className="text-slate-400 mb-6 max-w-xs text-sm font-medium">Genera tu rutina del día basada en tu configuración.</p>
+                    <Button onClick={generateRoutine} size="lg">
                         INICIAR RUTINA <Icon name="PlayCircle" className="ml-2 w-5 h-5" />
                     </Button>
                 </div>
+
             ) : (
                 <div className="space-y-6">
                     {/* Muscle Chips Summary - Modern Chips */}
@@ -684,7 +688,7 @@ const GymRoutineApp = () => {
             </header>
 
             {/* Main Content Area */}
-            <main className="pt-24 pb-32 px-4 max-w-md md:max-w-4xl mx-auto min-h-screen">
+            <main className="pt-24 pb-24 px-4 max-w-md md:max-w-4xl mx-auto flex flex-col">
                 {activeTab === 'routine' && <RoutineView />}
                 {activeTab === 'setup' && <SetupView />}
                 {activeTab === 'appearance' && <AppearanceView />}
