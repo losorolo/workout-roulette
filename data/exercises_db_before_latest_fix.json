@@ -1007,7 +1007,7 @@
             "videoId": "cvgVU3RC1YQ"
         },
         {
-            "name": "Curl de antebrazo con polea",
+            "name": "Cable Wrist Curl",
             "videoId": "Avvmae4hIMA"
         },
         {
@@ -1047,7 +1047,7 @@
             "videoId": "KUyRplbwGPE"
         },
         {
-            "name": "Flexión de muñeca",
+            "name": "Seated Dumbbell Palms-up Wrist Curl",
             "videoId": "y-x14sVi12o"
         },
         {
@@ -1055,11 +1055,11 @@
             "videoId": "y-x14sVi12o"
         },
         {
-            "name": "Flexión de muñeca",
+            "name": "Seated One-arm Dumbbell Palms-up Wrist Curl",
             "videoId": "Q7dTbE4kRUY"
         },
         {
-            "name": "Flexiones de antebrazo invertido",
+            "name": "Seated Palm-up Barbell Wrist Curl",
             "videoId": "NcDp9dkWr7g"
         },
         {
@@ -1295,7 +1295,7 @@
             "videoId": "TrLrJgwb8-4"
         },
         {
-            "name": "Curl Femoral",
+            "name": "Standing Leg Curl",
             "videoId": "K4moYGBfNmo"
         },
         {
@@ -1526,11 +1526,11 @@
             "videoId": "lgE47t3dr2Q"
         },
         {
-            "name": "Pull-over",
+            "name": "Bent-arm Barra Pullover",
             "videoId": "YLmUNLWpDQ4"
         },
         {
-            "name": "Extensiones de tríceps",
+            "name": "Polea Inclinado Extensión en Polea",
             "videoId": "vqq2NowgTrk"
         },
         {
@@ -1538,11 +1538,11 @@
             "videoId": "zE763Wt-BNo"
         },
         {
-            "name": "Jalón al pecho (agarre cerrado)",
+            "name": "Agarre Cerrado Frontal Jalón al Pecho",
             "videoId": "YR4Ytkhtihs"
         },
         {
-            "name": "Remo Gironda",
+            "name": "Elevated Polea Remos",
             "videoId": "I3Wi6GK0QMk"
         },
         {
@@ -1562,7 +1562,7 @@
             "videoId": "iyOM6y5ADAQ"
         },
         {
-            "name": "Remo unilateral con polea",
+            "name": "Arrodillado Un Brazo Alto Pulley Remo",
             "videoId": "Lv2_G8I5vZc"
         },
         {
@@ -1570,7 +1570,11 @@
             "videoId": "q3XwDd0nvp0"
         },
         {
-            "name": "Muscle-Up",
+            "name": "London Bridges",
+            "videoId": "B1vHuohdxBc"
+        },
+        {
+            "name": "Muslo Up",
             "videoId": "dz2kgzKUbQA"
         },
         {
@@ -1582,7 +1586,7 @@
             "videoId": "ehX6bdRUiL0"
         },
         {
-            "name": "Dominadas Amplias",
+            "name": "Rocky Pull-ups/jalóns",
             "videoId": "OBJl9qHZe0E"
         },
         {
@@ -1598,7 +1602,7 @@
             "videoId": "hAMcfubonDc"
         },
         {
-            "name": "Jalón unilateral en polea",
+            "name": "Underhand Polea Jalóns",
             "videoId": "L3isMvyckQU"
         },
         {
@@ -1626,6 +1630,10 @@
             "videoId": "sVWAZaYydRo"
         },
         {
+            "name": "Chair Lower Back Stretch",
+            "videoId": "fmDrS04owtM"
+        },
+        {
             "name": "Estiramientos de Espalda",
             "videoId": "wIEG11SF7Ek"
         },
@@ -1640,6 +1648,10 @@
         {
             "name": "One Handed Colgado",
             "videoId": "8ZiF2DtyMx8"
+        },
+        {
+            "name": "Side-lying Floor Stretch",
+            "videoId": "DMlSdmsHEeI"
         },
         {
             "name": "Catch And Sobre la Cabeza Thremo",
@@ -2233,7 +2245,7 @@
             "videoId": "tjO2_TNPArM"
         },
         {
-            "name": "Salto en una pierna",
+            "name": "Single-leg Hop Progression",
             "videoId": "nekKEq-6FiY"
         },
         {
@@ -2879,8 +2891,8 @@
             "videoId": "VAWNLYGORew"
         },
         {
-            "name": "Elevación de hombros",
-            "videoId": "UQkdNBpjFDo"
+            "name": "Hombro Elevación",
+            "videoId": "cD0sHEyF_SE"
         },
         {
             "name": "Shoulder Stretch",
@@ -3375,7 +3387,7 @@
     ],
     "Abductores": [
         {
-            "name": "Caminata Lateral",
+            "name": "Monster Walk",
             "videoId": "ES_ZKBlslEc"
         },
         {
@@ -3391,12 +3403,16 @@
             "videoId": "uuBs8uzo2RY"
         },
         {
+            "name": "Iliotibial Tract-smr",
+            "videoId": "Ncl0oa4pD-8"
+        },
+        {
             "name": "Lying Crossover",
             "videoId": "L61-GbXECTo"
         },
         {
-            "name": "Molinos",
-            "videoId": "ujf4VuiOwsQ"
+            "name": "Windmills",
+            "videoId": "b8-sJO0TbVk"
         },
         {
             "name": "Máquina Abductores",
